@@ -109,7 +109,7 @@ ini_set('display_errors', 1);
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div
                     class="card p-8 text-center"
-                    data-aos="fade-up"
+                    data-aos="fade-right"
                     data-aos-delay="100">
                     <div
                         class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
@@ -135,7 +135,7 @@ ini_set('display_errors', 1);
 
                 <div
                     class="card p-8 text-center"
-                    data-aos="fade-up"
+                    data-aos="fade-left"
                     data-aos-delay="200">
                     <div
                         class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
@@ -160,7 +160,7 @@ ini_set('display_errors', 1);
 
                 <div
                     class="card p-8 text-center"
-                    data-aos="fade-up"
+                    data-aos="fade-right"
                     data-aos-delay="300">
                     <div
                         class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
@@ -188,7 +188,7 @@ ini_set('display_errors', 1);
     <!-- Work Experience Table -->
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 md:px-6 lg:px-8">
-            <div class="text-center mb-16" data-aos="fade-up">
+            <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6">
                     Work Experience List
                 </h2>
@@ -202,8 +202,7 @@ ini_set('display_errors', 1);
             <!-- Data Table (Sesuai Gambar) -->
             <div
                 class="table-container overflow-x-auto"
-                data-aos="fade-up"
-                data-aos-delay="400">
+                >
                 <table class="min-w-full border border-gray-200 rounded-lg">
                     <thead>
                         <tr class="bg-gray-100">
@@ -248,7 +247,7 @@ ini_set('display_errors', 1);
             </div>
 
             <!-- Load More Button -->
-            <div class="text-center mt-8" data-aos="fade-up">
+            <div class="text-center mt-8" >
                 <button id="loadMoreBtn" class="btn btn-primary">
                     Load More Projects
                 </button>
