@@ -1,0 +1,115 @@
+/* Marquee Animation Styles */
+.marquee {
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+}
+
+.marquee::before,
+.marquee::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(249, 250, 251, 1), transparent);
+}
+
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(249, 250, 251, 1), transparent);
+}
+
+.marquee-content {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  flex-shrink: 0;
+  margin-right: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.marquee-item:hover {
+  transform: scale(1.1);
+}
+
+.marquee-item img {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.7);
+  transition: all 0.3s ease;
+}
+
+.marquee-item:hover img {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .marquee-content {
+    animation-duration: 20s;
+  }
+  
+  .marquee-item {
+    margin-right: 2rem;
+  }
+  
+  .marquee-item img {
+    max-height: 40px;
+  }
+}
+
+/* Alternative reverse marquee */
+.marquee-reverse .marquee-content {
+  animation: scroll-reverse 25s linear infinite;
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Pause on hover for better UX */
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* Dark theme support */
+.dark .marquee::before {
+  background: linear-gradient(to right, rgba(15, 23, 42, 1), transparent);
+}
+
+.dark .marquee::after {
+  background: linear-gradient(to left, rgba(15, 23, 42, 1), transparent);
+}
