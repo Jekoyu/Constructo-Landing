@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php include 'head.php'; ?>
+
 <body class="font-sans text-gray-800 bg-white">
-   <!-- Top Bar -->
-    <div class="bg-primary text-white py-2 px-4 hidden md:block lg:block">
-        <div
-            class="container mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
-            <div class="flex items-center space-x-4 mb-2 sm:mb-0">
-                <a
-                    href="tel:+622155556666"
-                    class="flex items-center hover:text-accent transition-colors">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4 mr-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    + 62 82136849377
-                </a>
-                <a
-                    href="mailto:info@ancatama.co.id"
-                    class="flex items-center hover:text-accent transition-colors">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4 mr-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    ancatamaabadi@gmail.com
-                </a>
-            </div>
-            <div class="flex items-center space-x-4">
-                <span class="flex items-center">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4 mr-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    Kota Cilegon, Provinsi Banten 42434.
-                </span>
-            </div>
-        </div>
+  <!-- Top Bar -->
+  <div class="bg-primary text-white py-2 px-4 hidden md:block lg:block">
+    <div
+      class="container mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
+      <div class="flex items-center space-x-4 mb-2 sm:mb-0">
+        <a
+          href="tel:+622155556666"
+          class="flex items-center hover:text-accent transition-colors">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 mr-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          + 62 82136849377
+        </a>
+        <a
+          href="mailto:info@ancatama.co.id"
+          class="flex items-center hover:text-accent transition-colors">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 mr-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          ancatamaabadi@gmail.com
+        </a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 mr-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          Kota Cilegon, Provinsi Banten 42434.
+        </span>
+      </div>
     </div>
+  </div>
 
   <!-- navbar -->
   <?php include 'navbar.php'; ?>
@@ -73,7 +74,7 @@
   <!-- Page Header -->
   <section class="relative py-20 bg-primary bg-pattern-dark">
     <div class="container mx-auto px-4 md:px-6 lg:px-8">
-      <div class="text-center text-white" >
+      <div class="text-center text-white">
         <h1 class="text-5xl text-white md:text-6xl font-bold mb-6">Our Portfolio</h1>
         <div
           class="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto mb-6"></div>
@@ -137,7 +138,8 @@
         id="portfolio-grid">
         <!-- Portfolio Item 1 -->
         <div
-          class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white">
+          class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
+          onclick="openModal('modal-1')">
           <div class="relative overflow-hidden h-64">
             <img
               src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -170,273 +172,73 @@
             </div>
           </div>
         </div>
-
-        <!-- Portfolio Item 2 -->
+        <!-- Portfolio Item 1 -->
         <div
-          class="portfolio-item residential group relative overflow-hidden rounded-lg shadow-lg bg-white">
+          class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
+          onclick="openModal('modal-1')">
           <div class="relative overflow-hidden h-64">
             <img
-              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Sunrise Residential Complex"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Grand Plaza Commercial Center"
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
             <div
               class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
               <h3 class="text-xl font-bold mb-2">
-                Sunrise Residential Complex
+                Grand Plaza Commercial Center
               </h3>
               <p class="text-sm opacity-90">
-                A luxury residential development featuring modern amenities,
-                green spaces, and family-friendly environment.
+                A modern commercial complex in the heart of Jakarta's business
+                district featuring state-of-the-art facilities and sustainable
+                design.
               </p>
             </div>
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold mb-2 text-gray-800">
-              Sunrise Residential Complex
+              Grand Plaza Commercial Center
             </h3>
             <p class="text-gray-600 mb-4">
-              Luxury residential development with modern amenities and
-              sustainable design in Bandung.
+              Modern commercial complex with premium facilities and strategic
+              location in Jakarta's central business district.
             </p>
             <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-500">Bandung • 2022</span>
-              <span
-                class="px-3 py-1 bg-accent text-white rounded-full text-sm">Residential</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 3 -->
-        <div
-          class="portfolio-item infrastructure group relative overflow-hidden rounded-lg shadow-lg bg-white">
-          <div class="relative overflow-hidden h-64">
-            <img
-              src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Central Highway Extension"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div
-              class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-              <h3 class="text-xl font-bold mb-2">
-                Central Highway Extension
-              </h3>
-              <p class="text-sm opacity-90">
-                Major infrastructure project connecting key economic zones
-                with advanced traffic management systems.
-              </p>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2 text-gray-800">
-              Central Highway Extension
-            </h3>
-            <p class="text-gray-600 mb-4">
-              Major infrastructure project connecting key economic zones in
-              Central Java with modern highway standards.
-            </p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-500">Central Java • 2021</span>
-              <span
-                class="px-3 py-1 bg-secondary text-white rounded-full text-sm">Infrastructure</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 4 -->
-        <div
-          class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white">
-          <div class="relative overflow-hidden h-64">
-            <img
-              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Tech Innovation Center"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div
-              class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-              <h3 class="text-xl font-bold mb-2">Tech Innovation Center</h3>
-              <p class="text-sm opacity-90">
-                State-of-the-art office complex designed for technology
-                companies with smart building features.
-              </p>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2 text-gray-800">
-              Tech Innovation Center
-            </h3>
-            <p class="text-gray-600 mb-4">
-              State-of-the-art office complex designed for technology
-              companies in Surabaya with smart building features.
-            </p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-500">Surabaya • 2020</span>
+              <span class="text-sm text-gray-500">Jakarta • 2023</span>
               <span
                 class="px-3 py-1 bg-primary text-white rounded-full text-sm">Commercial</span>
             </div>
           </div>
         </div>
-
-        <!-- Portfolio Item 5 -->
+        <!-- Portfolio Item 1 -->
         <div
-          class="portfolio-item commercial group relative overflow-hidden rounded-lg shadow-lg bg-white">
+          class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
+          onclick="openModal('modal-1')">
           <div class="relative overflow-hidden h-64">
             <img
-              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Green Valley Resort"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div
-              class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-              <h3 class="text-xl font-bold mb-2">Green Valley Resort</h3>
-              <p class="text-sm opacity-90">
-                Eco-friendly luxury resort that harmoniously blends with
-                Bali's natural landscape and cultural heritage.
-              </p>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2 text-gray-800">
-              Green Valley Resort
-            </h3>
-            <p class="text-gray-600 mb-4">
-              Eco-friendly luxury resort that harmoniously blends with Bali's
-              natural landscape and cultural heritage.
-            </p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-500">Bali • 2019</span>
-              <span
-                class="px-3 py-1 bg-accent text-white rounded-full text-sm">Commercial</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 6 -->
-        <div
-          class="portfolio-item infrastructure group relative overflow-hidden rounded-lg shadow-lg bg-white">
-          <div class="relative overflow-hidden h-64">
-            <img
-              src="https://images.unsplash.com/photo-1574155376612-bfa4ed8aabfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Urban Water Treatment Plant"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Grand Plaza Commercial Center"
               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
             <div
               class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
               <h3 class="text-xl font-bold mb-2">
-                Urban Water Treatment Plant
+                Grand Plaza Commercial Center
               </h3>
               <p class="text-sm opacity-90">
-                Modern water treatment facility serving the growing urban
-                population with advanced filtration technology.
+                A modern commercial complex in the heart of Jakarta's business
+                district featuring state-of-the-art facilities and sustainable
+                design.
               </p>
             </div>
           </div>
           <div class="p-6">
             <h3 class="text-xl font-bold mb-2 text-gray-800">
-              Urban Water Treatment Plant
+              Grand Plaza Commercial Center
             </h3>
             <p class="text-gray-600 mb-4">
-              Modern water treatment facility serving the growing urban
-              population of Makassar with advanced technology.
+              Modern commercial complex with premium facilities and strategic
+              location in Jakarta's central business district.
             </p>
             <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-500">Makassar • 2018</span>
-              <span
-                class="px-3 py-1 bg-secondary text-white rounded-full text-sm">Infrastructure</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 7 -->
-        <div
-          class="portfolio-item building residential group relative overflow-hidden rounded-lg shadow-lg bg-white">
-          <div class="relative overflow-hidden h-64">
-            <img
-              src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Modern Housing Estate"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div
-              class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-              <h3 class="text-xl font-bold mb-2">Modern Housing Estate</h3>
-              <p class="text-sm opacity-90">
-                Contemporary residential development with sustainable features
-                and community amenities.
-              </p>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2 text-gray-800">
-              Modern Housing Estate
-            </h3>
-            <p class="text-gray-600 mb-4">
-              Contemporary residential development with sustainable features
-              and community amenities in Tangerang.
-            </p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-500">Tangerang • 2021</span>
-              <span
-                class="px-3 py-1 bg-green-500 text-white rounded-full text-sm">Residential</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 8 -->
-        <div
-          class="portfolio-item infrastructure group relative overflow-hidden rounded-lg shadow-lg bg-white">
-          <div class="relative overflow-hidden h-64">
-            <img
-              src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Metropolitan Bridge Project"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div
-              class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-              <h3 class="text-xl font-bold mb-2">
-                Metropolitan Bridge Project
-              </h3>
-              <p class="text-sm opacity-90">
-                Iconic bridge connecting major districts with innovative
-                engineering and architectural design.
-              </p>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2 text-gray-800">
-              Metropolitan Bridge Project
-            </h3>
-            <p class="text-gray-600 mb-4">
-              Iconic bridge connecting major districts with innovative
-              engineering and architectural design in Jakarta.
-            </p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-500">Jakarta • 2020</span>
-              <span
-                class="px-3 py-1 bg-secondary text-white rounded-full text-sm">Infrastructure</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio Item 9 -->
-        <div
-          class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white">
-          <div class="relative overflow-hidden h-64">
-            <img
-              src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Corporate Headquarters"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div
-              class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-              <h3 class="text-xl font-bold mb-2">Corporate Headquarters</h3>
-              <p class="text-sm opacity-90">
-                Modern corporate headquarters with sustainable design and
-                advanced technology integration.
-              </p>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2 text-gray-800">
-              Corporate Headquarters
-            </h3>
-            <p class="text-gray-600 mb-4">
-              Modern corporate headquarters with sustainable design and
-              advanced technology integration in Medan.
-            </p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-500">Medan • 2022</span>
+              <span class="text-sm text-gray-500">Jakarta • 2023</span>
               <span
                 class="px-3 py-1 bg-primary text-white rounded-full text-sm">Commercial</span>
             </div>
@@ -444,14 +246,7 @@
         </div>
       </div>
 
-      <!-- Load More Button -->
-      <div class="text-center mt-12">
-        <button
-          class="px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-slate-800 transition-colors shadow-md hover:shadow-lg">
-          Load More Projects
-        </button>
-      </div>
-    </div>
+
   </section>
 
   <?php
@@ -475,6 +270,104 @@
         d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
     </svg>
   </button>
+
+  <!-- Modal Structure -->
+  <div id="modal-1" class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex justify-center items-center p-4">
+    <div class="bg-white rounded-lg shadow-2xl w-full max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto relative max-h-[90vh] flex flex-col overflow-hidden">
+      <!-- Close Button -->
+      <button onclick="closeModal('modal-1')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-20">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <!-- Gambar -->
+      <div class="w-full aspect-[3/2] bg-gray-100 relative">
+        <img
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+          alt="Grand Plaza Commercial Center"
+          class="absolute inset-0 w-full h-full object-cover rounded-t-lg" />
+      </div>
+      <!-- Isi Modal Scrollable -->
+      <div class="overflow-y-auto p-4 md:p-8 flex-1">
+        <div class="mb-6">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Grand Plaza Commercial Center</h2>
+          <div class="flex items-center mb-4 flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary text-white rounded-full text-sm mr-2">Commercial</span>
+            <span class="px-3 py-1 bg-secondary text-white rounded-full text-sm">Building</span>
+          </div>
+          <div class="text-gray-600 mb-4">
+            <strong>Location:</strong> Jakarta, Indonesia<br>
+            <strong>Completion:</strong> 2023<br>
+            <strong>Client:</strong> Grand Developers Ltd.<br>
+            <strong>Project Value:</strong> $45 Million
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Project Description</h3>
+          <p class="text-gray-600 mb-4">
+            The Grand Plaza Commercial Center is a landmark development in Jakarta's bustling business district.
+            This 15-story mixed-use complex features premium office spaces, a luxury retail mall, and modern
+            amenities that cater to international businesses and local enterprises alike.
+          </p>
+          <p class="text-gray-600 mb-4">
+            The building incorporates state-of-the-art sustainable design elements, including solar panels,
+            rainwater harvesting systems, and energy-efficient climate control. Its striking façade combines
+            glass, steel, and local materials to create an iconic addition to Jakarta's skyline.
+          </p>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-3">Key Features</h3>
+          <ul class="list-disc list-inside text-gray-600 space-y-2">
+            <li>15 floors of premium office space</li>
+            <li>3-level retail mall with international brands</li>
+            <li>Energy-efficient HVAC systems</li>
+            <li>4-level underground parking facility</li>
+            <li>Rooftop garden and event space</li>
+            <li>LEED Gold certification</li>
+          </ul>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <img src="https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Interior" class="w-full h-32 md:h-40 object-cover rounded">
+          <img src="https://images.unsplash.com/photo-1600585153490-76fb20a32601?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Front View" class="w-full h-32 md:h-40 object-cover rounded">
+          <img src="https://images.unsplash.com/photo-1577760258779-eb2868608c57?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Aerial View" class="w-full h-32 md:h-40 object-cover rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Modal open/close function
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Lock scroll
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Click outside modal closes
+    document.addEventListener('click', function(event) {
+      const modals = document.querySelectorAll('[id^="modal-"]');
+      modals.forEach(modal => {
+        if (!modal.classList.contains('hidden') && event.target === modal) {
+          closeModal(modal.id);
+        }
+      });
+    });
+
+    // Esc to close modal
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        const visibleModal = document.querySelector('[id^="modal-"]:not(.hidden)');
+        if (visibleModal) closeModal(visibleModal.id);
+      }
+    });
+  </script>
   <!-- Custom JavaScript -->
   <script src="./assets/js/script.js"></script>
 </body>

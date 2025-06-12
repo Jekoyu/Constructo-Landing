@@ -856,3 +856,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+// modal lihat surat legalitas 

@@ -106,7 +106,7 @@
                                     GET CONSULTATION
                                 </a>
                                 <a
-                                    href="#portfolio"
+                                    href="./portofolio.php"
                                     class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-primary transition-colors">
                                     VIEW PORTFOLIO
                                 </a>
@@ -116,7 +116,7 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="swiper-slide relative">
+                <div class="swiper-slide  relative">
                     <div
                         class="absolute inset-0 bg-cover bg-center"
                         style="
@@ -136,12 +136,12 @@
                             <div
                                 class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                                 <a
-                                    href="#services"
+                                    href="./service.php"
                                     class="px-8 py-4 bg-accent text-white font-bold rounded-lg hover:bg-cyan-600 transition-colors shadow-lg">
                                     OUR SERVICES
                                 </a>
                                 <a
-                                    href="#about"
+                                    href="./company.php"
                                     class="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-primary transition-colors">
                                     LEARN MORE
                                 </a>
@@ -171,7 +171,7 @@
                             <div
                                 class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                                 <a
-                                    href="#experience"
+                                    href="./experience.php"
                                     class="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-slate-800 transition-colors shadow-lg">
                                     OUR EXPERIENCE
                                 </a>
@@ -186,9 +186,9 @@
                 </div>
             </div>
 
-            <!-- Navigation arrows -->
-            <div class="swiper-button-next text-white"></div>
-            <div class="swiper-button-prev text-white"></div>
+            <!-- Navigation arrows - hidden on mobile -->
+            <div class="swiper-button-next text-white hidden sm:flex"></div>
+            <div class="swiper-button-prev text-white hidden sm:flex"></div>
 
             <!-- Pagination -->
             <div class="swiper-pagination"></div>
@@ -225,12 +225,12 @@
             </div>
 
             <!-- Main Content -->
-            <div class="flex flex-col lg:flex-row gap-12 mb-16">
+            <div class="flex flex-col flex-col-reverse lg:flex-row gap-12 mb-16">
                 <div class="lg:w-1/2" data-aos="fade-right">
                     <h3 class="text-3xl font-bold mb-6 text-primary">
                         Profil Perusahaan
                     </h3>
-                    <div class="space-y-4 text-gray-600 leading-relaxed">
+                    <div class="space-y-4 text-gray-600 leading-relaxed text-justify">
                         <p>
                             PT. Ancatama Citra Abadi adalah perusahaan swasta berskala
                             nasional yang didirikan di Kota Cilegon pada tanggal 20 Desember
@@ -241,14 +241,14 @@
                             berkomitmen menerapkan Total Quality Management untuk
                             menghadirkan Total Quality Services kepada seluruh klien.
                         </p>
-                        <p class="mt-4"></p>
-                        Kami terus berkembang dengan layanan yang berfokus pada kepuasan
-                        pelanggan, mutu pekerjaan, serta integritas tinggi di setiap
-                        proyek yang kami tangani. Kami telah dipercaya untuk berbagai
-                        proyek konstruksi dan desain interior di tingkat nasional,
-                        berkolaborasi dengan perusahaan swasta, instansi pemerintah,
-                        maupun BUMN. Dengan pengalaman, profesionalisme, dan dedikasi,
-                        kami siap menjadi partner pembangunan terbaik bagi Indonesia.
+                        <p class="mt-4">
+                            Kami terus berkembang dengan layanan yang berfokus pada kepuasan
+                            pelanggan, mutu pekerjaan, serta integritas tinggi di setiap
+                            proyek yang kami tangani. Kami telah dipercaya untuk berbagai
+                            proyek konstruksi dan desain interior di tingkat nasional,
+                            berkolaborasi dengan perusahaan swasta, instansi pemerintah,
+                            maupun BUMN. Dengan pengalaman, profesionalisme, dan dedikasi,
+                            kami siap menjadi partner pembangunan terbaik bagi Indonesia.
                         </p>
                     </div>
                     <div class="mt-8 flex space-x-4">
@@ -270,8 +270,8 @@
                             Contact Us
                         </a>
                         <a
-                            href="#services"
-                            class="px-6 py-3 border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent hover:text-white transition-colors flex items-center">
+                            href="./service.php"
+                            class="px-6  py-3 border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent hover:text-white transition-colors flex items-center">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 class="h-5 w-5 mr-2"
@@ -301,7 +301,7 @@
                         <div
                             class="absolute bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg">
                             <p class="font-bold text-primary">Established</p>
-                            <p class="text-3xl font-bold text-secondary">2005</p>
+                            <p class="text-3xl font-bold text-secondary">2018</p>
                         </div>
                     </div>
                 </div>
