@@ -724,10 +724,10 @@
 
             <!-- Load More Button -->
             <div class="text-center mt-12">
-                <button
-                    class="px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-slate-800 transition-colors shadow-md hover:shadow-lg">
+                <a href="./portofolio.php" 
+                    class="inline-block px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-slate-800 transition-colors shadow-md hover:shadow-lg">
                     Load More Projects
-                </button>
+                </a>
             </div>
         </div>
     </section>
