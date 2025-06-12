@@ -19,19 +19,19 @@
                </div>
                <!-- Desktop Menu -->
                <div class="hidden lg:flex space-x-8">
-                   <a href="/constructo-landing/index.php" class="nav-link font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-accent" id="nav-home">
+                   <a href="index.php" class="nav-link font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-accent" id="nav-home">
                        HOME
                    </a>
-                   <a href="/constructo-landing/company.php" class="nav-link font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-accent" id="nav-company">
+                   <a href="company.php" class="nav-link font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-accent" id="nav-company">
                        COMPANY
                    </a>
-                   <a href="/constructo-landing/service.php" class="nav-link font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-accent" id="nav-services">
+                   <a href="service.php" class="nav-link font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-accent" id="nav-services">
                        SERVICES
                    </a>
-                   <a href="/constructo-landing/experience.php" class="nav-link font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-accent" id="nav-experience">
+                   <a href="experience.php" class="nav-link font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-accent" id="nav-experience">
                        EXPERIENCE
                    </a>
-                   <a href="/constructo-landing/portofolio.php" class="nav-link font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-accent" id="nav-portfolio">
+                   <a href="portofolio.php" class="nav-link font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-accent" id="nav-portfolio">
                        PORTFOLIO
                    </a>
                </div>
@@ -55,11 +55,11 @@
            </div>
            <!-- Mobile Menu -->
            <div id="mobile-menu" class="lg:hidden hidden py-4">
-               <a href="/constructo-landing/index.php" class="block py-2 px-4 text-sm" id="mobile-nav-home">HOME</a>
-               <a href="/constructo-landing/company.php" class="block py-2 px-4 text-sm" id="mobile-nav-company">COMPANY</a>
-               <a href="/constructo-landing/services.php" class="block py-2 px-4 text-sm" id="mobile-nav-services">SERVICES</a>
-               <a href="/constructo-landing/experience.php" class="block py-2 px-4 text-sm" id="mobile-nav-experience">EXPERIENCE</a>
-               <a href="/constructo-landing/portfolio.php" class="block py-2 px-4 text-sm" id="mobile-nav-portfolio">PORTFOLIO</a>
+               <a href="index.php" class="block py-2 px-4 text-sm" id="mobile-nav-home">HOME</a>
+               <a href="company.php" class="block py-2 px-4 text-sm" id="mobile-nav-company">COMPANY</a>
+               <a href="services.php" class="block py-2 px-4 text-sm" id="mobile-nav-services">SERVICES</a>
+               <a href="experience.php" class="block py-2 px-4 text-sm" id="mobile-nav-experience">EXPERIENCE</a>
+               <a href="portfolio.php" class="block py-2 px-4 text-sm" id="mobile-nav-portfolio">PORTFOLIO</a>
            </div>
        </div>
    </nav>
