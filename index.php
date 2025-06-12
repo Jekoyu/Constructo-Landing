@@ -322,72 +322,72 @@
             <div class="marquee">
                 <div class="marquee-content">
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/21.png"
+                        <img src="./assets/images/21.png"
                             alt="Client 1" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/cabot_logo2x.png"
+                        <img src="./assets/images/cabot_logo2x.png"
                             alt="Client 2" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/logo-batangalum.png"
+                        <img src="./assets/images/logo-batangalum.png"
                             alt="Client 3" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/logo-krakatau.png"
+                        <img src="./assets/images/logo-krakatau.png"
                             alt="Client 3" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/logo_tereosfks.png"
+                        <img src="./assets/images/logo_tereosfks.png"
                             alt="Client 4" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/pt-jawamanis.jpg"
+                        <img src="./assets/images/pt-jawamanis.jpg"
                             alt="Client 5" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/pt-permata.png"
+                        <img src="./assets/images/pt-permata.png"
                             alt="Client 6" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/pt-suj.png"
+                        <img src="./assets/images/pt-suj.png"
                             alt="Client 7" class="h-10 md:h-12">
                     </div>
                     <!-- Duplicate for seamless loop -->
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images//21.png"
+                        <img src="./assets/images//21.png"
                             alt="Client 1" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/cabot_logo2x.png"
+                        <img src="./assets/images/cabot_logo2x.png"
                             alt="Client 2" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/logo-batangalum.png"
+                        <img src="./assets/images/logo-batangalum.png"
                             alt="Client 3" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/logo-krakatau.png"
+                        <img src="./assets/images/logo-krakatau.png"
                             alt="Client 3" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/logo_tereosfks.png"
+                        <img src="./assets/images/logo_tereosfks.png"
                             alt="Client 4" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/logo_tereosfks.png"
+                        <img src="./assets/images/logo_tereosfks.png"
                             alt="Client 5" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/pt-jawamanis.jpg"
+                        <img src="./assets/images/pt-jawamanis.jpg"
                             alt="Client 5" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/pt-permata.png"
+                        <img src="./assets/images/pt-permata.png"
                             alt="Client 6" class="h-10 md:h-12">
                     </div>
                     <div class="marquee-item">
-                        <img src="../Constructo-Landing/assets/images/pt-suj.png"
+                        <img src="./assets/images/pt-suj.png"
                             alt="Client 7" class="h-10 md:h-12">
                     </div>
                 </div>
