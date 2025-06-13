@@ -9,6 +9,7 @@ CREATE TABLE legalitas (
     id INT AUTO_INCREMENT PRIMARY KEY,
     jenis_legalitas VARCHAR(255) NOT NULL,
     nomor_keterangan VARCHAR(255) NOT NULL,
+    file_path VARCHAR(255),
     tanggal DATE
 );
 

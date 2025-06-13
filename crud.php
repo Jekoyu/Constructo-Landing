@@ -1,5 +1,6 @@
 <?php
 require_once 'database.php'; 
+
 class CRUD {
     private $conn;
 
@@ -72,3 +73,4 @@ class CRUD {
         }
     }
 }
+?>
