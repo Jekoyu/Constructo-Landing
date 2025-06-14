@@ -39,3 +39,9 @@ CREATE TABLE projects (
     type VARCHAR(255),
     FOREIGN KEY (client_id) REFERENCES clients(id)
 );
+CREATE TABLE images (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    project_id INT NOT NULL,
+    url VARCHAR(255) NOT NULL,
+    description VARCHAR(255)
+);

@@ -4,7 +4,7 @@
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
         <div class="sidebar-brand-icon rotate-n-15">
         </div>
-        <div class="sidebar-brand-text mx-3">Dusun Dukuh</div>
+        <div class="sidebar-brand-text mx-3">Ancatama</div>
     </a>
 
     <!-- Divider -->
@@ -13,25 +13,33 @@
     <!-- Nav Item - Tables -->
     <li class="nav-item active">
         <a class="nav-link" href="document.php">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-file-contract"></i>
             <span>Legalitas</span>
         </a>
     </li>
 
     <li class="nav-item active">
         <a class="nav-link" href="services.php">
-            <i class="fas fa-edit"></i>
+            <i class="fas fa-concierge-bell"></i>
             <span>Layanan</span>
         </a>
     </li>
+
     <li class="nav-item active">
         <a class="nav-link" href="project.php">
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-project-diagram"></i>
             <span>Project</span>
         </a>
     </li>
+    
 
-  
+
+    <li class="nav-item active">
+        <a class="nav-link" href="images.php">
+            <i class="fas fa-image"></i>
+            <span>Dokumentasi</span>
+        </a>
+    </li>
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

@@ -8,6 +8,7 @@ $crud = new CRUD();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         // Menangani Create
+        // Menangani Create
         if (isset($_POST['create'])) {
             $data = [
                 'jenis_legalitas' => $_POST['jenis_legalitas'],
@@ -15,25 +16,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'tanggal' => $_POST['tanggal'],
             ];
 
-            // Menangani Upload File
+            // Upload file terenkripsi
             if (isset($_FILES['file_upload']) && $_FILES['file_upload']['error'] === 0) {
                 $fileTmpPath = $_FILES['file_upload']['tmp_name'];
                 $fileName = $_FILES['file_upload']['name'];
-                $fileSize = $_FILES['file_upload']['size'];
-                $fileType = $_FILES['file_upload']['type'];
+                $fileExtension = pathinfo($fileName, PATHINFO_EXTENSION);
+                $encryptedFileName = md5(time() . $fileName . uniqid()) . '.' . $fileExtension;
+                $uploadDir = 'uploads/doc/';
+                $filePath = $uploadDir . $encryptedFileName;
 
-                // Tentukan lokasi penyimpanan file
-                $uploadDir = 'uploads/doc/';  // Ganti dengan uploads/doc/
-                $filePath = $uploadDir . basename($fileName);
-
-                // Pastikan folder upload ada dan memiliki izin yang benar
                 if (!is_dir($uploadDir)) {
                     throw new Exception("Folder upload tidak ditemukan.");
                 }
 
-                // Pindahkan file ke folder upload
                 if (move_uploaded_file($fileTmpPath, $filePath)) {
-                    $data['file_path'] = $filePath; // Tambahkan path file ke data
+                    $data['file_path'] = $filePath;
                 } else {
                     throw new Exception("Gagal mengupload file.");
                 }
@@ -45,6 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
 
+
+        // Menangani Update
         // Menangani Update
         if (isset($_POST['update'])) {
             $data = [
@@ -53,30 +52,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 'tanggal' => $_POST['tanggal'],
             ];
 
-            // Menangani Update File
+            // Upload file terenkripsi
             if (isset($_FILES['file_upload']) && $_FILES['file_upload']['error'] === 0) {
                 $fileTmpPath = $_FILES['file_upload']['tmp_name'];
                 $fileName = $_FILES['file_upload']['name'];
-                $fileSize = $_FILES['file_upload']['size'];
-                $fileType = $_FILES['file_upload']['type'];
+                $fileExtension = pathinfo($fileName, PATHINFO_EXTENSION);
+                $encryptedFileName = md5(time() . $fileName . uniqid()) . '.' . $fileExtension;
+                $uploadDir = 'uploads/doc/';
+                $filePath = $uploadDir . $encryptedFileName;
 
-                // Tentukan lokasi penyimpanan file
-                $uploadDir = 'uploads/doc/';  // Ganti dengan uploads/doc/
-                $filePath = $uploadDir . basename($fileName);
-
-                // Pastikan folder upload ada dan memiliki izin yang benar
                 if (!is_dir($uploadDir)) {
                     throw new Exception("Folder upload tidak ditemukan.");
                 }
 
-                // Pindahkan file ke folder upload
                 if (move_uploaded_file($fileTmpPath, $filePath)) {
-                    $data['file_path'] = $filePath; // Tambahkan path file ke data
+                    $data['file_path'] = $filePath;
                 } else {
                     throw new Exception("Gagal mengupload file.");
                 }
             } else {
-                // Jika tidak ada file yang diupload, gunakan file yang sudah ada
+                // Jika tidak upload file baru, tetap gunakan file lama
                 if (isset($_POST['existing_file']) && $_POST['existing_file'] != '') {
                     $data['file_path'] = $_POST['existing_file'];
                 }
@@ -88,6 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 throw new Exception("Failed to update legalitas data");
             }
         }
+
 
         // Menangani Delete
         if (isset($_POST['delete'])) {

@@ -15,7 +15,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/x-icon" href="../assets/img/sleman.ico">
-    <title>Tables</title>
+    <title>Admin Pages</title>
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
