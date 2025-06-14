@@ -62,7 +62,7 @@
           <h3 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-primary">
             Profil Perusahaan
           </h3>
-            <div class="space-y-4 text-gray-600 text-justify leading-relaxed text-sm sm:text-base">
+          <div class="space-y-4 text-gray-600 text-justify leading-relaxed text-sm sm:text-base">
             <p>
               PT. Ancatama Citra Abadi adalah perusahaan swasta berskala
               nasional yang didirikan di Kota Cilegon pada tanggal 20 Desember
@@ -170,85 +170,10 @@
                   <th class="py-3 px-2 sm:px-4 text-left text-xs sm:text-sm font-bold">Lihat</th>
                 </tr>
               </thead>
-              <tbody class="text-xs sm:text-sm">
-                <tr class="border-b hover:bg-gray-50 transition-colors">
-                  <td class="py-3 px-2 sm:px-4 font-medium">Akta Pendirian</td>
-                  <td class="py-3 px-2 sm:px-4">No. 18, Tgl 20 Desember 2018</td>
-                  <td class="py-3 px-2 sm:px-4">
-                    <button onclick="openModal('./assets/images/document-legalitas/akta-pendirian .png')" class="text-blue-600 hover:underline">Lihat</button>
-                  </td>
-                </tr>
-                <tr class="border-b hover:bg-gray-50 transition-colors">
-                  <td class="py-3 px-2 sm:px-4 font-medium">SK Menteri Kehakiman (Kemenkumham)</td>
-                  <td class="py-3 px-2 sm:px-4">AHU-0001965.AH.01.01.Tahun 2019</td>
-                  <td class="py-3 px-2 sm:px-4">
-                    <button onclick="openModal('./assets/images/document-legalitas/sk-kemenkumhan.png')" class="text-blue-600 hover:underline">Lihat</button>
-                  </td>
-                </tr>
-                <tr class="border-b bg-gray-50 hover:bg-gray-100 transition-colors">
-                  <td class="py-3 px-2 sm:px-4 font-medium">SIUP (Izin Usaha Perdagangan)</td>
-                  <td class="py-3 px-2 sm:px-4">503/0107/B/DPMPTSP/2019</td>
-                  <td class="py-3 px-2 sm:px-4">
-                    <button onclick="openModal('./assets/images/document-legalitas/siup.png')" class="text-blue-600 hover:underline">Lihat</button>
-                  </td>
-                </tr>
-                <tr class="border-b hover:bg-gray-50 transition-colors">
-                  <td class="py-3 px-2 sm:px-4 font-medium">NIB (Nomor Induk Berusaha)</td>
-                  <td class="py-3 px-2 sm:px-4">0220006422203</td>
-                  <td class="py-3 px-2 sm:px-4">
-                    <button onclick="openModal('./assets/images/document-legalitas/nib.png')" class="text-blue-600 hover:underline">Lihat</button>
-                  </td>
-                </tr>
-                <tr class="border-b bg-gray-50 hover:bg-gray-100 transition-colors">
-                  <td class="py-3 px-2 sm:px-4 font-medium">TDP (Tanda Daftar Perusahaan)</td>
-                  <td class="py-3 px-2 sm:px-4">503/0124/B/DPMPTSP/2019</td>
-                  <td class="py-3 px-2 sm:px-4">
-                    <button onclick="openModal('./assets/images/document-legalitas/tdp.png')" class="text-blue-600 hover:underline">Lihat</button>
-                  </td>
-                </tr>
-                <tr class="border-b hover:bg-gray-50 transition-colors">
-                  <td class="py-3 px-2 sm:px-4 font-medium">NPWP</td>
-                  <td class="py-3 px-2 sm:px-4">90.108.971.4-417.000</td>
-                  <td class="py-3 px-2 sm:px-4">
-                    <button onclick="openModal('./assets/images/document-legalitas/npwp.png')" class="text-blue-600 hover:underline">Lihat</button>
-                </tr>
-                <tr class="border-b bg-gray-50 hover:bg-gray-100 transition-colors">
-                  <td class="py-3 px-2 sm:px-4 font-medium">SPPKP (PKP/Pengusaha Kena Pajak)</td>
-                  <td class="py-3 px-2 sm:px-4">S-91PKP/WPJ.08/KP.0403/2022</td>
-                  <td class="py-3 px-2 sm:px-4">
-                    <button onclick="openModal('./assets/images/document-legalitas/sppkp-pajak.png')" class="text-blue-600 hover:underline">Lihat</button>
-
-                  </td>
-                </tr>
-                <tr class="border-b hover:bg-gray-50 transition-colors">
-                  <td class="py-3 px-2 sm:px-4 font-medium">SBU Jasa Konstruksi</td>
-                  <td class="py-3 px-2 sm:px-4">PB-UMKU: 812031008340700030001</td>
-                  <td class="py-3 px-2 sm:px-4">
-                    <button onclick="openModal('./assets/images/document-legalitas/sbu-jasakonstruksi.png')" class="text-blue-600 hover:underline">Lihat</button>
-                  </td>
-                </tr>
-                <tr class="border-b bg-gray-50 hover:bg-gray-100 transition-colors">
-                  <td class="py-3 px-2 sm:px-4 font-medium">SKDP (Domisili Perusahaan)</td>
-                  <td class="py-3 px-2 sm:px-4">530/1/1/PM-Kesos/2020</td>
-                  <td class="py-3 px-2 sm:px-4">
-                    <button onclick="openModal('./assets/images/document-legalitas/skdp.png')" class="text-blue-600 hover:underline">Lihat</button>
-                  </td>
-                </tr>
-                <tr class="border-b hover:bg-gray-50 transition-colors">
-                  <td class="py-3 px-2 sm:px-4 font-medium">BPJS Ketenagakerjaan</td>
-                  <td class="py-3 px-2 sm:px-4">190000000633608</td>
-                  <td class="py-3 px-2 sm:px-4">
-                    <button onclick="openModal('./assets/images/document-legalitas/bpjs-kerja.png')" class="text-blue-600 hover:underline">Lihat</button>
-                  </td>
-                </tr>
-                <tr class="bg-gray-50 hover:bg-gray-100 transition-colors">
-                  <td class="py-3 px-2 sm:px-4 font-medium">BPJS Kesehatan</td>
-                  <td class="py-3 px-2 sm:px-4">02241377</td>
-                  <td class="py-3 px-2 sm:px-4">
-                    <button onclick="openModal('./assets/images/document-legalitas/bpjs-kesehatan.png')" class="text-blue-600 hover:underline">Lihat</button>
-                  </td>
-                </tr>
+              <tbody id="legalitas-table-body" class="text-xs sm:text-sm">
+                <!-- Data akan dimuat lewat JS -->
               </tbody>
+
             </table>
           </div>
         </div>
@@ -273,6 +198,44 @@
   </div>
   <script src="./assets/js/script.js"></script>
   <script>
+    
+ function getModalView(filePath) {
+  if (!filePath || filePath.trim() === '' || filePath === '-') {
+    return '<span class="text-gray-400 italic">Tidak ada file</span>';
+  }
+  // Cek apakah sudah ada 'admin/' di depan, kalau belum tambahkan
+  let url = filePath.trim();
+  if (!url.startsWith('admin/')) {
+    url = 'admin/' + url.replace(/^\.?\/?/, ''); // hapus ./ atau / di depan, lalu tambah admin/
+  }
+  return `<button onclick="openModal('${url.replace(/'/g,"\\'")}')" class="text-blue-600 hover:underline">Lihat</button>`;
+}
+
+
+
+    // Fetch legalitas dari API
+    fetch('data_api.php?type=legalitas')
+      .then(res => res.json())
+      .then(data => {
+        const tbody = document.getElementById('legalitas-table-body');
+        if (!Array.isArray(data)) {
+          tbody.innerHTML = `<tr><td colspan="3" class="py-3 px-2 sm:px-4 text-center text-red-600">${data.error || "Gagal load data"}</td></tr>`;
+          return;
+        }
+        if (data.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="3" class="py-3 px-2 sm:px-4 text-center">Tidak ada data legalitas.</td></tr>`;
+        } else {
+          tbody.innerHTML = data.map((row, i) => `
+        <tr class="border-b ${i%2 ? 'bg-gray-50 hover:bg-gray-100' : 'hover:bg-gray-50'} transition-colors">
+          <td class="py-3 px-2 sm:px-4 font-medium">${row.jenis_legalitas}</td>
+          <td class="py-3 px-2 sm:px-4">${row.nomor_keterangan}</td>
+          <td class="py-3 px-2 sm:px-4">${getModalView(row.file_path)}</td>
+        </tr>
+      `).join('');
+        }
+      });
+
+
     function openModal(imageSrc) {
       document.getElementById('modalImage').src = imageSrc;
       document.getElementById('imageModal').classList.remove('hidden');

@@ -6,7 +6,11 @@
                    <div class="w-12 h-12 rounded-lg flex items-center justify-center mr-3">
                        <img
                            src="./assets/images/logo.webp"
-                           alt="PT. Ancatama Citra Abadi" />
+                           alt="PT. Ancatama Citra Abadi"
+                           width="48"
+                           height="48"
+                           loading="eager"
+                           class="object-contain" />
                    </div>
                    <div>
                        <h1 class="text-xl font-bold text-primary">

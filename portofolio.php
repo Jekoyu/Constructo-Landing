@@ -102,153 +102,13 @@
         </p>
       </div>
 
-      <!-- Portfolio Filter -->
-      <div
-        class="flex flex-wrap justify-center mb-12">
-        <button
-          class="portfolio-filter active px-6 py-3 mx-2 mb-2 bg-primary text-white rounded-lg font-medium transition-colors shadow-md"
-          data-filter="all">
-          All Projects
-        </button>
-        <button
-          class="portfolio-filter px-6 py-3 mx-2 mb-2 bg-white text-gray-700 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors shadow-md"
-          data-filter="building">
-          Building Construction
-        </button>
-        <button
-          class="portfolio-filter px-6 py-3 mx-2 mb-2 bg-white text-gray-700 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors shadow-md"
-          data-filter="infrastructure">
-          Infrastructure
-        </button>
-        <button
-          class="portfolio-filter px-6 py-3 mx-2 mb-2 bg-white text-gray-700 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors shadow-md"
-          data-filter="residential">
-          Residential
-        </button>
-        <button
-          class="portfolio-filter px-6 py-3 mx-2 mb-2 bg-white text-gray-700 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors shadow-md"
-          data-filter="commercial">
-          Commercial
-        </button>
+      <div class="flex flex-wrap justify-center gap-4 mb-12" id="portfolio-filters">
       </div>
 
-      <!-- Portfolio Grid -->
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        id="portfolio-grid">
-        <!-- Portfolio Item 1 -->
-        <div
-          class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
-          onclick="openModal('modal-1')">
-          <div class="relative overflow-hidden h-64">
-            <img
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Grand Plaza Commercial Center"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div
-              class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-              <h3 class="text-xl font-bold mb-2">
-                Grand Plaza Commercial Center
-              </h3>
-              <p class="text-sm opacity-90">
-                A modern commercial complex in the heart of Jakarta's business
-                district featuring state-of-the-art facilities and sustainable
-                design.
-              </p>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2 text-gray-800">
-              Grand Plaza Commercial Center
-            </h3>
-            <p class="text-gray-600 mb-4">
-              Modern commercial complex with premium facilities and strategic
-              location in Jakarta's central business district.
-            </p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-500">Jakarta • 2023</span>
-              <span
-                class="px-3 py-1 bg-primary text-white rounded-full text-sm">Commercial</span>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio Item 1 -->
-        <div
-          class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
-          onclick="openModal('modal-1')">
-          <div class="relative overflow-hidden h-64">
-            <img
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Grand Plaza Commercial Center"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div
-              class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-              <h3 class="text-xl font-bold mb-2">
-                Grand Plaza Commercial Center
-              </h3>
-              <p class="text-sm opacity-90">
-                A modern commercial complex in the heart of Jakarta's business
-                district featuring state-of-the-art facilities and sustainable
-                design.
-              </p>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2 text-gray-800">
-              Grand Plaza Commercial Center
-            </h3>
-            <p class="text-gray-600 mb-4">
-              Modern commercial complex with premium facilities and strategic
-              location in Jakarta's central business district.
-            </p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-500">Jakarta • 2023</span>
-              <span
-                class="px-3 py-1 bg-primary text-white rounded-full text-sm">Commercial</span>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio Item 1 -->
-        <div
-          class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
-          onclick="openModal('modal-1')">
-          <div class="relative overflow-hidden h-64">
-            <img
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Grand Plaza Commercial Center"
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-            <div
-              class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-              <h3 class="text-xl font-bold mb-2">
-                Grand Plaza Commercial Center
-              </h3>
-              <p class="text-sm opacity-90">
-                A modern commercial complex in the heart of Jakarta's business
-                district featuring state-of-the-art facilities and sustainable
-                design.
-              </p>
-            </div>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold mb-2 text-gray-800">
-              Grand Plaza Commercial Center
-            </h3>
-            <p class="text-gray-600 mb-4">
-              Modern commercial complex with premium facilities and strategic
-              location in Jakarta's central business district.
-            </p>
-            <div class="flex justify-between items-center">
-              <span class="text-sm text-gray-500">Jakarta • 2023</span>
-              <span
-                class="px-3 py-1 bg-primary text-white rounded-full text-sm">Commercial</span>
-            </div>
-          </div>
-        </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8" id="portfolio-grid">
       </div>
-
-
+    </div>
   </section>
-
   <?php
   include 'footer.php';
   ?>
@@ -272,71 +132,17 @@
   </button>
 
   <!-- Modal Structure -->
-  <div id="modal-1" class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex justify-center items-center p-4">
-    <div class="bg-white rounded-lg shadow-2xl w-full max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto relative max-h-[90vh] flex flex-col overflow-hidden">
-      <!-- Close Button -->
-      <button onclick="closeModal('modal-1')" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-20">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-      <!-- Gambar -->
-      <div class="w-full aspect-[3/2] bg-gray-100 relative">
-        <img
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-          alt="Grand Plaza Commercial Center"
-          class="absolute inset-0 w-full h-full object-cover rounded-t-lg" />
-      </div>
-      <!-- Isi Modal Scrollable -->
-      <div class="overflow-y-auto p-4 md:p-8 flex-1">
-        <div class="mb-6">
-          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">Grand Plaza Commercial Center</h2>
-          <div class="flex items-center mb-4 flex-wrap gap-2">
-            <span class="px-3 py-1 bg-primary text-white rounded-full text-sm mr-2">Commercial</span>
-            <span class="px-3 py-1 bg-secondary text-white rounded-full text-sm">Building</span>
-          </div>
-          <div class="text-gray-600 mb-4">
-            <strong>Location:</strong> Jakarta, Indonesia<br>
-            <strong>Completion:</strong> 2023<br>
-            <strong>Client:</strong> Grand Developers Ltd.<br>
-            <strong>Project Value:</strong> $45 Million
-          </div>
-        </div>
-
-        <div class="mb-6">
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Project Description</h3>
-          <p class="text-gray-600 mb-4">
-            The Grand Plaza Commercial Center is a landmark development in Jakarta's bustling business district.
-            This 15-story mixed-use complex features premium office spaces, a luxury retail mall, and modern
-            amenities that cater to international businesses and local enterprises alike.
-          </p>
-          <p class="text-gray-600 mb-4">
-            The building incorporates state-of-the-art sustainable design elements, including solar panels,
-            rainwater harvesting systems, and energy-efficient climate control. Its striking façade combines
-            glass, steel, and local materials to create an iconic addition to Jakarta's skyline.
-          </p>
-        </div>
-
-        <div class="mb-6">
-          <h3 class="text-xl font-bold text-gray-800 mb-3">Key Features</h3>
-          <ul class="list-disc list-inside text-gray-600 space-y-2">
-            <li>15 floors of premium office space</li>
-            <li>3-level retail mall with international brands</li>
-            <li>Energy-efficient HVAC systems</li>
-            <li>4-level underground parking facility</li>
-            <li>Rooftop garden and event space</li>
-            <li>LEED Gold certification</li>
-          </ul>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          <img src="https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Interior" class="w-full h-32 md:h-40 object-cover rounded">
-          <img src="https://images.unsplash.com/photo-1600585153490-76fb20a32601?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Front View" class="w-full h-32 md:h-40 object-cover rounded">
-          <img src="https://images.unsplash.com/photo-1577760258779-eb2868608c57?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Aerial View" class="w-full h-32 md:h-40 object-cover rounded">
-        </div>
-      </div>
-    </div>
+  <!-- Modal Project (JANGAN hapus id/modal di bawah ini) -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50 flex justify-center items-center p-4">
+    <div id="project-modal-content" class="bg-white rounded-lg shadow-2xl w-full max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto relative max-h-[90vh] flex flex-col overflow-hidden"></div>
+    <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-20">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
   </div>
+
+
 
   <script>
     // Modal open/close function
@@ -370,6 +176,180 @@
   </script>
   <!-- Custom JavaScript -->
   <script src="./assets/js/script.js"></script>
+
+  <!-- Fetch Categories and project -->
+
+  <script>
+    const PROJECT_IMAGE_BASE = "/Constructo-Landing/"; // base url gambar
+    let allProjects = []; // cache project
+
+    // 1. Render kategori filter (MODIFIED)
+    function renderPortfolioFilters(categories) {
+      const filterDiv = document.getElementById('portfolio-filters');
+      // MODIFIED: Dihapus mx-2 mb-2 dari tombol
+      let btns = `
+    <button class="portfolio-filter active px-6 py-3 bg-primary text-white rounded-lg font-medium transition-colors shadow-md"
+      data-filter="all">All Projects</button>
+  `;
+      categories.forEach(category => {
+        // MODIFIED: Dihapus mx-2 mb-2 dari tombol
+        btns += `
+    <button class="portfolio-filter px-6 py-3 bg-white text-gray-700 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors shadow-md"
+      data-filter="${category}">${category}</button>
+    `;
+      });
+      filterDiv.innerHTML = btns;
+    }
+
+    // 2. Render project card grid
+    function getProjectImage(project) {
+      if (project.images && project.images.length && project.images[0].url) {
+        let img = project.images[0].url.trim();
+        // Pastikan path sesuai
+        if (!img.startsWith('/Constructo-Landing/admin/uploads/img/')) {
+          img = img.replace(/^uploads\/img\//, '').replace(/^\/+/, '');
+          img = '/Constructo-Landing/admin/uploads/img/' + img;
+        }
+        return `<img src="${img}" loading="lazy" alt="${project.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />`;
+      }
+      return `<div class="w-full h-full bg-gray-100 flex items-center justify-center text-gray-400">No Image</div>`;
+    }
+
+    function renderProjects(projects) {
+      const grid = document.getElementById('portfolio-grid');
+      if (!Array.isArray(projects) || !projects.length) {
+        grid.innerHTML = `<div class="col-span-3 text-center text-gray-400">No projects found.</div>`;
+        return;
+      }
+      grid.innerHTML = projects.map(project => `
+    <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
+      onclick='openProjectModal(${JSON.stringify(project)})'>
+      <div class="relative overflow-hidden aspect-square">
+        ${getProjectImage(project)}
+      </div>
+      <div class="p-5">
+        <h3 class="text-lg font-bold mb-1 text-gray-800">${project.name}</h3>
+        <p class="text-gray-600 mb-2 truncate">${project.description || ''}</p>
+        <div class="flex flex-col-reverse items-start gap-4 ">
+          <span class="text-xs text-gray-500">${project.year || ''}</span>
+          <span class="px-2 py-1 bg-primary text-white rounded-full text-xs">${project.category || ''}</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+    }
+
+    // 3. Event filter
+    function setupPortfolioFilter() {
+      const filters = document.querySelectorAll('.portfolio-filter');
+      filters.forEach(btn => {
+        btn.addEventListener('click', function() {
+          filters.forEach(b => b.classList.remove('active', 'bg-primary', 'text-white'));
+          this.classList.add('active', 'bg-primary', 'text-white');
+          const filter = this.dataset.filter;
+          if (filter === "all") {
+            renderProjects(allProjects);
+          } else {
+            renderProjects(allProjects.filter(p => (p.category || "").toLowerCase() === filter.toLowerCase()));
+          }
+        });
+      });
+    }
+
+    // 4. Fetch & render all
+    function loadPortfolio() {
+      // Fetch categories
+      fetch('/Constructo-Landing/data.php?action=categories')
+        .then(res => res.json())
+        .then(cats => {
+          if (cats.status === "success" && Array.isArray(cats.categories)) {
+            renderPortfolioFilters(cats.categories);
+          }
+          // Fetch projects setelah kategori sudah render
+          fetch('/Constructo-Landing/data.php?action=projects')
+            .then(res => res.json())
+            .then(res => {
+              if (Array.isArray(res.projects)) {
+                allProjects = res.projects;
+                renderProjects(allProjects);
+                setTimeout(setupPortfolioFilter, 200); // tunggu DOM tombol filter sudah ada
+              }
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadPortfolio);
+
+    // --- MODAL PROJECT
+    function openProjectModal(project) {
+      // Main image 1:1
+      const mainImg = project.images && project.images.length ?
+        `<div class="w-full p-4 aspect-square  flex items-center justify-center overflow-hidden rounded-t-lg mb-2">
+      <img src="${getProjectImageUrl(project.images[0].url)}" loading="lazy" alt="${project.name}" class="w-full h-full rounded-md object-cover" />
+    </div>` :
+        `<div class="w-full p-4  aspect-square flex items-center justify-center text-gray-400 mb-2">No Image</div>`;
+
+      // Extra images grid
+      let extraImgs = '';
+      if (project.images && project.images.length > 1) {
+        extraImgs = `<div class="grid grid-cols-3 gap-2 mb-4">` +
+          project.images.slice(1, 4).map(img =>
+            `<div class="aspect-square overflow-hidden rounded">
+              <img src="${getProjectImageUrl(img.url)}" loading="lazy" class="w-full h-full rounded-md object-cover" alt="Project Image">
+            </div>`
+          ).join('') + `</div>`;
+      }
+
+      // Feature list (if any)
+      let list = '';
+      if (Array.isArray(project.features)) {
+        list = `<ul class="list-disc list-inside text-gray-600 mb-3 space-y-1">
+      ${project.features.map(f => `<li>${f}</li>`).join('')}
+    </ul>`;
+      }
+
+      // Project details
+      document.getElementById('project-modal-content').innerHTML = `
+    ${mainImg}
+    <div class="px-5 pb-5">
+      <h2 class="text-xl md:text-2xl font-bold mb-2">${project.name}</h2>
+      <div class="flex items-center gap-2 flex-wrap mb-3">
+        <span class="px-2 py-1 bg-primary text-white rounded-full text-xs">${project.category || ''}</span>
+        <span class="px-2 py-1 bg-secondary text-white rounded-full text-xs">${project.year || ''}</span>
+      </div>
+      <p class="text-gray-600 mb-3">${project.description || ''}</p>
+      ${list}
+      ${extraImgs}
+    </div>
+  `;
+      document.getElementById('project-modal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProjectModal() {
+      document.getElementById('project-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+      document.getElementById('project-modal-content').innerHTML = '';
+    }
+
+    // Utility: Path gambar biar selalu bener
+    function getProjectImageUrl(img) {
+      if (!img) return '';
+      if (!img.startsWith('/Constructo-Landing/admin/uploads/img/')) {
+        img = '/Constructo-Landing/admin/uploads/img/' + img.replace(/^uploads\/img\//, '').replace(/^\/+/, '');
+      }
+      return img;
+    }
+
+    // Esc key & click overlay = close
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') closeProjectModal();
+    });
+    document.getElementById('project-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeProjectModal();
+    });
+  </script>
+
 </body>
 
 </html>

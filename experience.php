@@ -8,7 +8,7 @@ ini_set('display_errors', 1);
 <?php require  'head.php'; ?>
 
 <body class="font-sans text-gray-800 bg-gray-50">
-     <!-- Top Bar -->
+    <!-- Top Bar -->
     <div class="bg-primary text-white py-2 px-4 hidden md:block lg:block">
         <div
             class="container mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
@@ -201,8 +201,7 @@ ini_set('display_errors', 1);
 
             <!-- Data Table (Sesuai Gambar) -->
             <div
-                class="table-container overflow-x-auto"
-                >
+                class="table-container overflow-x-auto">
                 <table class="min-w-full border border-gray-200 rounded-lg">
                     <thead>
                         <tr class="bg-gray-100">
@@ -212,42 +211,15 @@ ini_set('display_errors', 1);
                             <th class="py-3 px-4 text-left font-bold">YEAR</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr class="bg-white">
-                            <td class="py-3 px-4">1</td>
-                            <td class="py-3 px-4">Repair/ modifikasi line comp. Air</td>
-                            <td class="py-3 px-4">PT. TEREOS FKS INDONESIA</td>
-                            <td class="py-3 px-4">Jan 2019 – Feb 2019</td>
-                        </tr>
-                        <tr class="bg-gray-200">
-                            <td class="py-3 px-4">2</td>
-                            <td class="py-3 px-4">Installation Cover Rear Great Boiler</td>
-                            <td class="py-3 px-4">PT. TEREOS FKS INDONESIA</td>
-                            <td class="py-3 px-4">Jan 2019 – Feb 2019</td>
-                        </tr>
-                        <tr class="bg-white">
-                            <td class="py-3 px-4">3</td>
-                            <td class="py-3 px-4">
-                                Fabrication & Installation Pipe Condenstate CWM
-                            </td>
-                            <td class="py-3 px-4">PT. TEREOS FKS INDONESIA</td>
-                            <td class="py-3 px-4">Feb 2019 – Mar 2019</td>
-                        </tr>
-                        <tr class="bg-gray-200">
-                            <td class="py-3 px-4">4</td>
-                            <td class="py-3 px-4">
-                                Modification Line Hydrant, Glucose, Ceria, Etc.
-                            </td>
-                            <td class="py-3 px-4">PT. TEREOS FKS INDONESIA</td>
-                            <td class="py-3 px-4">Feb 2019 – Mar 2019</td>
-                        </tr>
-                        <!-- Tambah baris jika ingin -->
+                    <tbody id="experience-table-body">
+                        <!-- Data akan diisi oleh JavaScript -->
                     </tbody>
+
                 </table>
             </div>
 
             <!-- Load More Button -->
-            <div class="text-center mt-8" >
+            <div class="text-center mt-8">
                 <button id="loadMoreBtn" class="btn btn-primary">
                     Load More Projects
                 </button>
@@ -259,6 +231,45 @@ ini_set('display_errors', 1);
     ?>
     <!-- JavaScript -->
     <script src="./assets/js/script.js"></script>
+    <!-- Fetch Tabel experience -->
+    <script>
+        function renderExperienceTable(experiences) {
+            const tbody = document.getElementById('experience-table-body');
+            if (!Array.isArray(experiences) || experiences.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="4" class="py-3 px-4 text-center text-gray-400">No experience data found.</td></tr>`;
+                return;
+            }
+            tbody.innerHTML = experiences.map((exp, idx) => `
+        <tr class="${idx % 2 === 0 ? 'bg-white' : 'bg-gray-200'}">
+            <td class="py-3 px-4">${idx + 1}</td>
+            <td class="py-3 px-4">${exp.description}</td>
+            <td class="py-3 px-4">${exp.client}</td>
+            <td class="py-3 px-4">${exp.year}</td>
+        </tr>
+    `).join('');
+        }
+
+        // Fetch experience data from API
+        function fetchExperience() {
+            fetch('http://localhost/Constructo-Landing/data.php?action=experience')
+                .then(res => res.json())
+                .then(res => {
+                    // Kalau format API seperti di screenshot:
+                    if (res.status === "success" && Array.isArray(res.experience)) {
+                        renderExperienceTable(res.experience);
+                    } else {
+                        renderExperienceTable([]);
+                    }
+                })
+                .catch(() => {
+                    renderExperienceTable([]);
+                });
+        }
+
+        // Panggil fetch saat halaman load
+        fetchExperience();
+    </script>
+
 </body>
 
 </html>

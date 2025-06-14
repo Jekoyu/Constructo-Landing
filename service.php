@@ -5,69 +5,69 @@
 
 <body class="font-sans text-gray-800 bg-white">
   <!-- Top Bar -->
-    <div class="bg-primary text-white py-2 px-4 hidden md:block lg:block">
-        <div
-            class="container mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
-            <div class="flex items-center space-x-4 mb-2 sm:mb-0">
-                <a
-                    href="tel:+622155556666"
-                    class="flex items-center hover:text-accent transition-colors">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4 mr-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    + 62 82136849377
-                </a>
-                <a
-                    href="mailto:info@ancatama.co.id"
-                    class="flex items-center hover:text-accent transition-colors">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4 mr-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    ancatamaabadi@gmail.com
-                </a>
-            </div>
-            <div class="flex items-center space-x-4">
-                <span class="flex items-center">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4 mr-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    Kota Cilegon, Provinsi Banten 42434.
-                </span>
-            </div>
-        </div>
+  <div class="bg-primary text-white py-2 px-4 hidden md:block lg:block">
+    <div
+      class="container mx-auto flex flex-col sm:flex-row justify-between items-center text-sm">
+      <div class="flex items-center space-x-4 mb-2 sm:mb-0">
+        <a
+          href="tel:+622155556666"
+          class="flex items-center hover:text-accent transition-colors">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 mr-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          + 62 82136849377
+        </a>
+        <a
+          href="mailto:info@ancatama.co.id"
+          class="flex items-center hover:text-accent transition-colors">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 mr-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          ancatamaabadi@gmail.com
+        </a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 mr-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          Kota Cilegon, Provinsi Banten 42434.
+        </span>
+      </div>
     </div>
+  </div>
 
   <!-- navbar -->
   <?php include 'navbar.php'; ?>
@@ -75,7 +75,7 @@
   <!-- Page Header -->
   <section class="relative py-20 bg-primary bg-pattern-dark">
     <div class="container mx-auto px-4 md:px-6 lg:px-8">
-      <div class="text-center text-white" >
+      <div class="text-center text-white">
         <h1 class="text-5xl text-white md:text-6xl font-bold mb-6">
           Our Services
         </h1>
@@ -147,7 +147,7 @@
           </div>
           <h3 class="text-xl font-bold mb-3">Tepat Waktu</h3>
           <p class="text-gray-600">
-          Kami berkomitmen untuk menyelesaikan proyek sesuai jadwal tanpa mengorbankan kualitas.
+            Kami berkomitmen untuk menyelesaikan proyek sesuai jadwal tanpa mengorbankan kualitas.
           </p>
         </div>
 
@@ -216,7 +216,7 @@
           </div>
           <h3 class="text-xl font-bold mb-3">Keselamatan Utama</h3>
           <p class="text-gray-600">
-          Keselamatan adalah prioritas utama kami dalam semua aktivitas dan operasi konstruksi.
+            Keselamatan adalah prioritas utama kami dalam semua aktivitas dan operasi konstruksi.
           </p>
         </div>
 
@@ -239,7 +239,7 @@
           </div>
           <h3 class="text-xl font-bold mb-3">Dukungan 24/7</h3>
           <p class="text-gray-600">
-          Kami menyediakan layanan dukungan dan pemeliharaan 24 jam untuk klien kami.
+            Kami menyediakan layanan dukungan dan pemeliharaan 24 jam untuk klien kami.
           </p>
         </div>
       </div>
@@ -261,47 +261,10 @@
       </div>
 
       <!-- Services Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Service 1: Fasilitas Umum -->
-        <div
-          class="service-card bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-accent">
-          <div class="p-6">
-            <div class="flex items-center mb-4">
-              <div
-                class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 text-white"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-accent">FASILITAS UMUM</h3>
-            </div>
-            <div class="mb-4">
-              <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=100%&q=80"
-                alt="Building 1"
-                class="rounded-lg w-full h-60 object-cover" />
-            </div>
-            <h4 class="font-bold text-accent mb-2">
-              Pekerjaan Fasilitas umum
-            </h4>
-            <ul class="text-gray-600 text-sm space-y-1">
-              <li>• Puskesmas Pemkab Musi Rawas</li>
-              <li>• Puskesmas Poned Biru Biru Puskesmas</li>
-              <li>• Tanjung Ucang</li>
-              <li>• etc</li>
-            </ul>
-          </div>
-        </div>
+      <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service cards will be loaded here by JS -->
       </div>
+
     </div>
   </section>
   <?php
@@ -326,7 +289,65 @@
     </svg>
   </button>
   <!-- Custom JavaScript -->
-<script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <!-- Load Data from BE -->
+  <script>
+    // Ganti baseUrl sesuai folder project-mu di XAMPP/Laragon/dll
+    const projectPath = '/Constructo-Landing/admin/uploads/img/';
+
+    function serviceImageView(imageUrl) {
+      if (!imageUrl || imageUrl.trim() === '' || imageUrl === '-') {
+        return `<div class="w-full h-60 bg-gray-100 rounded-lg flex items-center justify-center">
+              <span class="text-gray-400">No Image</span>
+            </div>`;
+      }
+      let url = imageUrl.trim();
+      // Sudah absolute
+      if (/^https?:\/\//.test(url)) {
+        return `<img src="${url}" loading="lazy" alt="Service Image" class="rounded-lg w-full h-60 object-cover" />`;
+      }
+      // Pastikan path benar
+      if (!url.startsWith('/Constructo-Landing/')) {
+        url = '/Constructo-Landing/admin/uploads/img/' + url.split('/').pop();
+      }
+      const fullUrl = window.location.origin + url;
+      return `<img src="${fullUrl}" loading="lazy" alt="Service Image" class="rounded-lg w-full h-60 object-cover" />`;
+    }
+
+
+
+
+    // Fetch services dari backend
+    fetch('data_api.php?type=services')
+      .then(res => res.json())
+      .then(data => {
+        const grid = document.getElementById('services-grid');
+        if (!Array.isArray(data) || data.length === 0) {
+          grid.innerHTML = `<div class="col-span-3 text-center text-gray-400">No services available.</div>`;
+          return;
+        }
+        grid.innerHTML = data.map(service => `
+      <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-accent">
+        <div class="p-6">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-accent">${service.name}</h3>
+          </div>
+          <div class="mb-4">
+            ${serviceImageView(service.image_url)}
+          </div>
+          <h4 class="font-bold text-accent mb-2">${service.name}</h4>
+          <p class="text-gray-600 text-sm mb-2">${service.description}</p>
+        </div>
+      </div>
+    `).join('');
+      });
+  </script>
+
 </body>
 
 </html>

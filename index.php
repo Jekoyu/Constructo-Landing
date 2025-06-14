@@ -293,6 +293,7 @@
                         <img
                             src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
                             alt="Modern Office Building"
+                            loading="lazy"
                             class="rounded-lg shadow-xl w-full h-auto object-cover" />
                         <div
                             class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent rounded-full opacity-20"></div>
@@ -401,333 +402,24 @@
         <div class="container mx-auto px-4 md:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6">Our Projects</h2>
-                <div
-                    class="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto mb-6"></div>
+                <div class="w-24 h-1 bg-gradient-to-r from-accent to-secondary mx-auto mb-6"></div>
                 <p class="text-gray-600 max-w-3xl mx-auto text-lg">
-                    Explore our diverse portfolio of completed projects across various
-                    sectors and industries.
+                    Explore our diverse portfolio of completed projects across various sectors and industries.
                 </p>
             </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" id="portfolio-grid"></div>
+        </div>
 
-            <!-- Portfolio Grid -->
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-                id="portfolio-grid">
-                <!-- Portfolio Item 1 -->
-                <div
-                    class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white">
-                    <div class="relative overflow-hidden h-64">
-                        <img
-                            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Grand Plaza Commercial Center"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                        <div
-                            class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-                            <h3 class="text-xl font-bold mb-2">
-                                Grand Plaza Commercial Center
-                            </h3>
-                            <p class="text-sm opacity-90">
-                                A modern commercial complex in the heart of Jakarta's business
-                                district featuring state-of-the-art facilities and sustainable
-                                design.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-gray-800">
-                            Grand Plaza Commercial Center
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Modern commercial complex with premium facilities and strategic
-                            location in Jakarta's central business district.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500">Jakarta • 2023</span>
-                            <span
-                                class="px-3 py-1 bg-primary text-white rounded-full text-sm">Commercial</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 2 -->
-                <div
-                    class="portfolio-item residential group relative overflow-hidden rounded-lg shadow-lg bg-white">
-                    <div class="relative overflow-hidden h-64">
-                        <img
-                            src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Sunrise Residential Complex"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                        <div
-                            class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-                            <h3 class="text-xl font-bold mb-2">
-                                Sunrise Residential Complex
-                            </h3>
-                            <p class="text-sm opacity-90">
-                                A luxury residential development featuring modern amenities,
-                                green spaces, and family-friendly environment.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-gray-800">
-                            Sunrise Residential Complex
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Luxury residential development with modern amenities and
-                            sustainable design in Bandung.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500">Bandung • 2022</span>
-                            <span
-                                class="px-3 py-1 bg-accent text-white rounded-full text-sm">Residential</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 3 -->
-                <div
-                    class="portfolio-item infrastructure group relative overflow-hidden rounded-lg shadow-lg bg-white">
-                    <div class="relative overflow-hidden h-64">
-                        <img
-                            src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Central Highway Extension"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                        <div
-                            class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-                            <h3 class="text-xl font-bold mb-2">
-                                Central Highway Extension
-                            </h3>
-                            <p class="text-sm opacity-90">
-                                Major infrastructure project connecting key economic zones
-                                with advanced traffic management systems.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-gray-800">
-                            Central Highway Extension
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Major infrastructure project connecting key economic zones in
-                            Central Java with modern highway standards.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500">Central Java • 2021</span>
-                            <span
-                                class="px-3 py-1 bg-secondary text-white rounded-full text-sm">Infrastructure</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 4 -->
-                <div
-                    class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white">
-                    <div class="relative overflow-hidden h-64">
-                        <img
-                            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Tech Innovation Center"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                        <div
-                            class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-                            <h3 class="text-xl font-bold mb-2">Tech Innovation Center</h3>
-                            <p class="text-sm opacity-90">
-                                State-of-the-art office complex designed for technology
-                                companies with smart building features.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-gray-800">
-                            Tech Innovation Center
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            State-of-the-art office complex designed for technology
-                            companies in Surabaya with smart building features.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500">Surabaya • 2020</span>
-                            <span
-                                class="px-3 py-1 bg-primary text-white rounded-full text-sm">Commercial</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 5 -->
-                <div
-                    class="portfolio-item commercial group relative overflow-hidden rounded-lg shadow-lg bg-white">
-                    <div class="relative overflow-hidden h-64">
-                        <img
-                            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Green Valley Resort"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                        <div
-                            class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-                            <h3 class="text-xl font-bold mb-2">Green Valley Resort</h3>
-                            <p class="text-sm opacity-90">
-                                Eco-friendly luxury resort that harmoniously blends with
-                                Bali's natural landscape and cultural heritage.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-gray-800">
-                            Green Valley Resort
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Eco-friendly luxury resort that harmoniously blends with Bali's
-                            natural landscape and cultural heritage.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500">Bali • 2019</span>
-                            <span
-                                class="px-3 py-1 bg-accent text-white rounded-full text-sm">Commercial</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 6 -->
-                <div
-                    class="portfolio-item infrastructure group relative overflow-hidden rounded-lg shadow-lg bg-white">
-                    <div class="relative overflow-hidden h-64">
-                        <img
-                            src="https://images.unsplash.com/photo-1574155376612-bfa4ed8aabfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Urban Water Treatment Plant"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                        <div
-                            class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-                            <h3 class="text-xl font-bold mb-2">
-                                Urban Water Treatment Plant
-                            </h3>
-                            <p class="text-sm opacity-90">
-                                Modern water treatment facility serving the growing urban
-                                population with advanced filtration technology.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-gray-800">
-                            Urban Water Treatment Plant
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Modern water treatment facility serving the growing urban
-                            population of Makassar with advanced technology.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500">Makassar • 2018</span>
-                            <span
-                                class="px-3 py-1 bg-secondary text-white rounded-full text-sm">Infrastructure</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 7 -->
-                <div
-                    class="portfolio-item building residential group relative overflow-hidden rounded-lg shadow-lg bg-white">
-                    <div class="relative overflow-hidden h-64">
-                        <img
-                            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Modern Housing Estate"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                        <div
-                            class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-                            <h3 class="text-xl font-bold mb-2">Modern Housing Estate</h3>
-                            <p class="text-sm opacity-90">
-                                Contemporary residential development with sustainable features
-                                and community amenities.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-gray-800">
-                            Modern Housing Estate
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Contemporary residential development with sustainable features
-                            and community amenities in Tangerang.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500">Tangerang • 2021</span>
-                            <span
-                                class="px-3 py-1 bg-green-500 text-white rounded-full text-sm">Residential</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 8 -->
-                <div
-                    class="portfolio-item infrastructure group relative overflow-hidden rounded-lg shadow-lg bg-white">
-                    <div class="relative overflow-hidden h-64">
-                        <img
-                            src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Metropolitan Bridge Project"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                        <div
-                            class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-                            <h3 class="text-xl font-bold mb-2">
-                                Metropolitan Bridge Project
-                            </h3>
-                            <p class="text-sm opacity-90">
-                                Iconic bridge connecting major districts with innovative
-                                engineering and architectural design.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-gray-800">
-                            Metropolitan Bridge Project
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Iconic bridge connecting major districts with innovative
-                            engineering and architectural design in Jakarta.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500">Jakarta • 2020</span>
-                            <span
-                                class="px-3 py-1 bg-secondary text-white rounded-full text-sm">Infrastructure</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 9 -->
-                <div
-                    class="portfolio-item building commercial group relative overflow-hidden rounded-lg shadow-lg bg-white">
-                    <div class="relative overflow-hidden h-64">
-                        <img
-                            src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Corporate Headquarters"
-                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                        <div
-                            class="portfolio-content absolute bottom-4 left-4 right-4 text-white z-10">
-                            <h3 class="text-xl font-bold mb-2">Corporate Headquarters</h3>
-                            <p class="text-sm opacity-90">
-                                Modern corporate headquarters with sustainable design and
-                                advanced technology integration.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-gray-800">
-                            Corporate Headquarters
-                        </h3>
-                        <p class="text-gray-600 mb-4">
-                            Modern corporate headquarters with sustainable design and
-                            advanced technology integration in Medan.
-                        </p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-gray-500">Medan • 2022</span>
-                            <span
-                                class="px-3 py-1 bg-primary text-white rounded-full text-sm">Commercial</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Load More Button -->
-            <div class="text-center mt-12">
-                <a href="./portofolio.php" 
-                    class="inline-block px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-slate-800 transition-colors shadow-md hover:shadow-lg">
-                    Load More Projects
-                </a>
+        <!-- Modal -->
+        <div id="project-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-60 flex justify-center items-center">
+            <div class="bg-white rounded-lg shadow-2xl w-full max-w-lg md:max-w-xl mx-auto relative">
+                <!-- Close Button -->
+                <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 z-20">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <div id="project-modal-content"></div>
             </div>
         </div>
     </section>
@@ -777,8 +469,8 @@
                                     <div>
                                         <h4 class="font-bold text-gray-800 mb-2">Phone & Fax</h4>
                                         <p class="text-gray-600">
-                                            Phone: <a href="tel:+622182850095" class="text-accent hover:underline">+62 82136849377</a><br>
-                                            Phone: <a href="tel:+6282311377731" class="text-accent hover:underline">+62 82311377731 </a><br>
+                                            Phone: <a href="https://wa.me/6282136849377" class="text-accent hover:underline">+62 82136849377</a><br>
+                                            Phone: <a href="https://wa.me/6282311377731" class="text-accent hover:underline">+62 82311377731</a><br>
                                         </p>
                                     </div>
                                 </div>
@@ -898,7 +590,128 @@
     <?php
     include 'footer.php';
     ?>
+
     <script src="./assets/js/script.js"></script>
+
+    <!-- Fetch API for projects -->
+    <script>
+        const PROJECT_IMAGE_BASE = "/Constructo-Landing/admin/uploads/img/";
+
+        function getProjectImage(project) {
+            if (project.images && project.images.length && project.images[0].url) {
+                let img = project.images[0].url.trim();
+                if (!img.startsWith(PROJECT_IMAGE_BASE)) {
+                    img = img.replace(/^uploads\/img\//, '').replace(/^\/+/, '');
+                    img = PROJECT_IMAGE_BASE + img;
+                }
+                return `<img src="${img}" loading="lazy" alt="${project.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 rounded-t-lg" />`;
+            }
+            return `<div class="w-full h-full bg-gray-100 flex items-center justify-center text-gray-400">No Image</div>`;
+        }
+
+        function getProjectImageUrl(img) {
+            if (!img) return '';
+            if (!img.startsWith(PROJECT_IMAGE_BASE)) {
+                img = img.replace(/^uploads\/img\//, '').replace(/^\/+/, '');
+                img = PROJECT_IMAGE_BASE + img;
+            }
+            return img;
+        }
+
+        function renderProjects(projects) {
+            const grid = document.getElementById('portfolio-grid');
+            if (!Array.isArray(projects) || !projects.length) {
+                grid.innerHTML = `<div class="col-span-4 text-center text-gray-400">No projects found.</div>`;
+                return;
+            }
+            // hanya ambil 4 project terbaru
+            grid.innerHTML = projects.slice(0, 4).map((project, idx) => `
+                <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
+                onclick='openProjectModal(${JSON.stringify(project)})'>
+                <div class="relative overflow-hidden aspect-square">
+                    ${getProjectImage(project)}
+                </div>
+                <div class="p-5">
+                    <h3 class="text-lg font-bold mb-1 text-gray-800">${project.name}</h3>
+                    <p class="text-gray-600 mb-2 truncate">${project.description || ''}</p>
+                    <div class="flex flex-col-reverse items-start gap-4 mt-4">
+                    <span class="text-xs text-gray-500">${project.year || ''}</span>
+                    <span class="px-2 py-1 bg-primary text-white rounded-full text-xs">${project.category || ''}</span>
+                    </div>
+                </div>
+                </div>
+            `).join('');
+        }
+
+        function openProjectModal(project) {
+            // Main image 1:1
+            const mainImg = project.images && project.images.length ?
+                `<div class="w-full p-4 aspect-square flex items-center justify-center overflow-hidden rounded-t-lg mb-2">
+      <img src="${getProjectImageUrl(project.images[0].url)}" loading="lazy" alt="${project.name}" class="w-full h-full rounded-md object-cover" />
+            </div>` :
+                `<div class="w-full p-4 aspect-square flex items-center justify-center text-gray-400 mb-2">No Image</div>`;
+
+            // Extra images grid
+            let extraImgs = '';
+            if (project.images && project.images.length > 1) {
+                extraImgs = `<div class="grid grid-cols-3 gap-2 mb-4">` +
+                    project.images.slice(1, 4).map(img =>
+                        `<div class="aspect-square overflow-hidden rounded">
+                <img src="${getProjectImageUrl(img.url)}" loading="lazy" class="w-full h-full rounded-md object-cover" alt="Project Image">
+                </div>`
+                    ).join('') + `</div>`;
+            }
+
+            // Feature list (if any)
+            let list = '';
+            if (Array.isArray(project.features)) {
+                list = `<ul class="list-disc list-inside text-gray-600 mb-3 space-y-1">
+            ${project.features.map(f => `<li>${f}</li>`).join('')}
+            </ul>`;
+            }
+
+            document.getElementById('project-modal-content').innerHTML = `
+            ${mainImg}
+            <div class="px-5 pb-5">
+            <h2 class="text-xl md:text-2xl font-bold mb-2">${project.name}</h2>
+            <div class="flex items-center gap-2 flex-wrap mb-3">
+                <span class="px-2 py-1 bg-primary text-white rounded-full text-xs">${project.category || ''}</span>
+                <span class="px-2 py-1 bg-secondary text-white rounded-full text-xs">${project.year || ''}</span>
+            </div>
+            <p class="text-gray-600 mb-3">${project.description || ''}</p>
+            ${list}
+            ${extraImgs}
+            </div>
+        `;
+            document.getElementById('project-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectModal() {
+            document.getElementById('project-modal').classList.add('hidden');
+            document.body.style.overflow = '';
+            document.getElementById('project-modal-content').innerHTML = '';
+        }
+
+        // Modal: click overlay atau esc untuk close
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') closeProjectModal();
+        });
+        document.getElementById('project-modal').addEventListener('click', function(e) {
+            if (e.target === this) closeProjectModal();
+        });
+
+        // Fetch & render saat ready
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/Constructo-Landing/data.php?action=projects')
+                .then(res => res.json())
+                .then(res => {
+                    if (Array.isArray(res.projects)) {
+                        renderProjects(res.projects);
+                    }
+                });
+        });
+    </script>
 </body>
 
 </html>
