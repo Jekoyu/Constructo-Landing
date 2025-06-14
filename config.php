@@ -3,7 +3,7 @@
 if ($_SERVER['HTTP_HOST'] === 'localhost') {
   $apiBaseUrl = "http://localhost/Constructo-Landing";
 } else {
-  $apiBaseUrl = "https://ancatamacitraabadi.co.id/Constructo-Landing";
+  $apiBaseUrl = "https://ancatamacitraabadi.co.id";
 }
 ?>
 <script>
