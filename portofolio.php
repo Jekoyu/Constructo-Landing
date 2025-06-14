@@ -178,9 +178,15 @@
   <script src="./assets/js/script.js"></script>
 
   <!-- Fetch Categories and project -->
+  <!-- sebelum <script> yang JS fetch! -->
+  <?php include 'config.php'; ?>
+  <script>
+    window.API_BASE_URL = "<?= $apiBaseUrl ?>";
+  </script>
 
   <script>
-    const PROJECT_IMAGE_BASE = "/Constructo-Landing/"; // base url gambar
+    const PROJECT_IMAGE_BASE = window.API_BASE_URL + "/admin/uploads/img/";
+
     let allProjects = []; // cache project
 
     // 1. Render kategori filter (MODIFIED)
@@ -259,15 +265,18 @@
     // 4. Fetch & render all
     function loadPortfolio() {
       // Fetch categories
-      fetch('/Constructo-Landing/data.php?action=categories')
+      fetch(window.API_BASE_URL + '/data.php?action=categories')  
         .then(res => res.json())
         .then(cats => {
           if (cats.status === "success" && Array.isArray(cats.categories)) {
             renderPortfolioFilters(cats.categories);
           }
           // Fetch projects setelah kategori sudah render
-          fetch('/Constructo-Landing/data.php?action=projects')
-            .then(res => res.json())
+          fetch(window.API_BASE_URL + '/data.php?action=projects')
+            .then(res => {
+              if (!res.ok) throw new Error('Network response was not ok');
+              return res.json();
+            })
             .then(res => {
               if (Array.isArray(res.projects)) {
                 allProjects = res.projects;
