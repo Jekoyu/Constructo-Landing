@@ -209,9 +209,9 @@
       if (project.images && project.images.length && project.images[0].url) {
         let img = project.images[0].url.trim();
         // Pastikan path sesuai
-        if (!img.startsWith('/Constructo-Landing/admin/uploads/img/')) {
+        if (!img.startsWith('/admin/uploads/img/')) {
           img = img.replace(/^uploads\/img\//, '').replace(/^\/+/, '');
-          img = '/Constructo-Landing/admin/uploads/img/' + img;
+          img = '/admin/uploads/img/' + img;
         }
         return `<img src="${img}" loading="lazy" alt="${project.name}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />`;
       }
@@ -345,8 +345,8 @@
     // Utility: Path gambar biar selalu bener
     function getProjectImageUrl(img) {
       if (!img) return '';
-      if (!img.startsWith('/Constructo-Landing/admin/uploads/img/')) {
-        img = '/Constructo-Landing/admin/uploads/img/' + img.replace(/^uploads\/img\//, '').replace(/^\/+/, '');
+      if (!img.startsWith('/admin/uploads/img/')) {
+        img = '/admin/uploads/img/' + img.replace(/^uploads\/img\//, '').replace(/^\/+/, '');
       }
       return img;
     }
