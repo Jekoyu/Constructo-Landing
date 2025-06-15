@@ -227,7 +227,8 @@ ini_set('display_errors', 1);
         </div>
     </section>
     <?php
-    require  'footer.php';
+    require 'footer.php';
+    include 'config.php'; // Tambahkan agar window.API_BASE_URL tersedia
     ?>
     <!-- JavaScript -->
     <script src="./assets/js/script.js"></script>
@@ -240,21 +241,20 @@ ini_set('display_errors', 1);
                 return;
             }
             tbody.innerHTML = experiences.map((exp, idx) => `
-        <tr class="${idx % 2 === 0 ? 'bg-white' : 'bg-gray-200'}">
-            <td class="py-3 px-4">${idx + 1}</td>
-            <td class="py-3 px-4">${exp.description}</td>
-            <td class="py-3 px-4">${exp.client}</td>
-            <td class="py-3 px-4">${exp.year}</td>
-        </tr>
-    `).join('');
+            <tr class="${idx % 2 === 0 ? 'bg-white' : 'bg-gray-200'}">
+                <td class="py-3 px-4">${idx + 1}</td>
+                <td class="py-3 px-4">${exp.description}</td>
+                <td class="py-3 px-4">${exp.client}</td>
+                <td class="py-3 px-4">${exp.year}</td>
+            </tr>
+        `).join('');
         }
 
-        // Fetch experience data from API
+        // Fetch experience data from API pakai base URL dari window.API_BASE_URL
         function fetchExperience() {
-            fetch('http://localhost/Constructo-Landing/data.php?action=experience')
+            fetch(window.API_BASE_URL + '/data.php?action=experience')
                 .then(res => res.json())
                 .then(res => {
-                    // Kalau format API seperti di screenshot:
                     if (res.status === "success" && Array.isArray(res.experience)) {
                         renderExperienceTable(res.experience);
                     } else {
