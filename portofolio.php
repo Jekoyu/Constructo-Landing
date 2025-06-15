@@ -107,6 +107,8 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8" id="portfolio-grid">
       </div>
+      <div id="pagination-controls" class="flex justify-center mt-8"></div>
+
     </div>
   </section>
   <?php
@@ -183,7 +185,10 @@
   <script>
     const PROJECT_IMAGE_BASE = window.API_BASE_URL + "/admin/uploads/img/";
 
-    let allProjects = []; // cache project
+    // pagination and prioriteze img 
+    let allProjects = [];
+    let currentPage = 1;
+    const pageSize = 12;
 
     // 1. Render kategori filter (MODIFIED)
     function renderPortfolioFilters(categories) {
@@ -356,6 +361,120 @@
     document.getElementById('project-modal').addEventListener('click', function(e) {
       if (e.target === this) closeProjectModal();
     });
+
+
+
+    function prioritizeWithImages(projects) {
+      // Pisahkan yang ada gambar dan tidak
+      const withImages = projects.filter(p => p.images && p.images.length && p.images[0].url && p.images[0].url.trim() !== "");
+      const withoutImages = projects.filter(p => !p.images || !p.images.length || !p.images[0].url || p.images[0].url.trim() === "");
+      return [...withImages, ...withoutImages];
+    }
+
+    function renderProjectsPaginated(projects, page = 1) {
+      projects = prioritizeWithImages(projects);
+
+      const grid = document.getElementById('portfolio-grid');
+      const total = projects.length;
+      const startIdx = (page - 1) * pageSize;
+      const endIdx = Math.min(startIdx + pageSize, total);
+
+      const currentProjects = projects.slice(startIdx, endIdx);
+
+      if (!Array.isArray(currentProjects) || !currentProjects.length) {
+        grid.innerHTML = `<div class="col-span-3 text-center text-gray-400">No projects found.</div>`;
+        document.getElementById('pagination-controls').innerHTML = '';
+        return;
+      }
+
+      grid.innerHTML = currentProjects.map(project => `
+    <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
+      onclick='openProjectModal(${JSON.stringify(project)})'>
+      <div class="relative overflow-hidden aspect-square">
+        ${getProjectImage(project)}
+      </div>
+      <div class="p-5">
+        <h3 class="text-lg font-bold mb-1 text-gray-800">${project.name}</h3>
+        <p class="text-gray-600 mb-2 truncate">${project.description || ''}</p>
+        <div class="flex flex-col-reverse items-start gap-4 ">
+          <span class="text-xs text-gray-500">${project.year || ''}</span>
+          <span class="px-2 py-1 bg-primary text-white rounded-full text-xs">${project.category || ''}</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+      // Render Pagination Controls
+      renderPaginationControls(page, Math.ceil(total / pageSize));
+    }
+
+    function renderPaginationControls(current, total) {
+      const ctrl = document.getElementById('pagination-controls');
+      if (total <= 1) {
+        ctrl.innerHTML = '';
+        return;
+      }
+      let buttons = '';
+      if (current > 1) {
+        buttons += `<button class="px-4 py-2 mx-1 bg-gray-200 rounded hover:bg-primary hover:text-white" onclick="changePage(${current - 1})">&laquo; Prev</button>`;
+      }
+      buttons += `<span class="px-4 py-2 mx-1 font-bold">${current} / ${total}</span>`;
+      if (current < total) {
+        buttons += `<button class="px-4 py-2 mx-1 bg-gray-200 rounded hover:bg-primary hover:text-white" onclick="changePage(${current + 1})">Next &raquo;</button>`;
+      }
+      ctrl.innerHTML = buttons;
+    }
+
+    function changePage(page) {
+      currentPage = page;
+      renderProjectsPaginated(allProjects, currentPage);
+    }
+
+    // Panggil di loadPortfolio
+    function loadPortfolio() {
+      fetch(window.API_BASE_URL + '/data.php?action=categories')
+        .then(res => {
+          if (!res.ok) throw new Error('Network response was not ok');
+          return res.json();
+        })
+        .then(cats => {
+          if (cats.status === "success" && Array.isArray(cats.categories)) {
+            renderPortfolioFilters(cats.categories);
+          }
+          fetch(window.API_BASE_URL + '/data.php?action=projects')
+            .then(res => {
+              if (!res.ok) throw new Error('Network response was not ok');
+              return res.json();
+            })
+            .then(res => {
+              if (Array.isArray(res.projects)) {
+                allProjects = res.projects;
+                renderProjectsPaginated(allProjects, 1);
+                setTimeout(setupPortfolioFilter, 200);
+              }
+            });
+        });
+    }
+
+    // Update event filter untuk reset ke page 1
+    function setupPortfolioFilter() {
+      const filters = document.querySelectorAll('.portfolio-filter');
+      filters.forEach(btn => {
+        btn.addEventListener('click', function() {
+          filters.forEach(b => b.classList.remove('active', 'bg-primary', 'text-white'));
+          this.classList.add('active', 'bg-primary', 'text-white');
+          const filter = this.dataset.filter;
+          let filtered = allProjects;
+          if (filter !== "all") {
+            filtered = allProjects.filter(p => (p.category || "").toLowerCase() === filter.toLowerCase());
+          }
+          currentPage = 1;
+          renderProjectsPaginated(filtered, currentPage);
+        });
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadPortfolio);
   </script>
 
 </body>
