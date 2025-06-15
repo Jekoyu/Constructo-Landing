@@ -1,1 +1,3 @@
 .env
+/admin/uploads/doc/*
+/admin/uploads/img/*
