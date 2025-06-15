@@ -592,14 +592,17 @@
     ?>
 
     <script src="./assets/js/script.js"></script>
+    <?php include 'config.php'; ?>
 
     <!-- Fetch API for projects -->
     <script>
-        const PROJECT_IMAGE_BASE = "/Constructo-Landing/admin/uploads/img/";
+        // Pastikan base url dari ENV/config.php (otomatis ikut prod/dev)
+        const PROJECT_IMAGE_BASE = window.API_BASE_URL + "/admin/uploads/img/";
 
         function getProjectImage(project) {
             if (project.images && project.images.length && project.images[0].url) {
                 let img = project.images[0].url.trim();
+                // Perbaiki path jika belum full
                 if (!img.startsWith(PROJECT_IMAGE_BASE)) {
                     img = img.replace(/^uploads\/img\//, '').replace(/^\/+/, '');
                     img = PROJECT_IMAGE_BASE + img;
@@ -626,7 +629,7 @@
             }
             // hanya ambil 4 project terbaru
             grid.innerHTML = projects.slice(0, 4).map((project, idx) => `
-                <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
+            <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
                 onclick='openProjectModal(${JSON.stringify(project)})'>
                 <div class="relative overflow-hidden aspect-square">
                     ${getProjectImage(project)}
@@ -635,19 +638,19 @@
                     <h3 class="text-lg font-bold mb-1 text-gray-800">${project.name}</h3>
                     <p class="text-gray-600 mb-2 truncate">${project.description || ''}</p>
                     <div class="flex flex-col-reverse items-start gap-4 mt-4">
-                    <span class="text-xs text-gray-500">${project.year || ''}</span>
-                    <span class="px-2 py-1 bg-primary text-white rounded-full text-xs">${project.category || ''}</span>
+                        <span class="text-xs text-gray-500">${project.year || ''}</span>
+                        <span class="px-2 py-1 bg-primary text-white rounded-full text-xs">${project.category || ''}</span>
                     </div>
                 </div>
-                </div>
-            `).join('');
+            </div>
+        `).join('');
         }
 
         function openProjectModal(project) {
             // Main image 1:1
             const mainImg = project.images && project.images.length ?
                 `<div class="w-full p-4 aspect-square flex items-center justify-center overflow-hidden rounded-t-lg mb-2">
-      <img src="${getProjectImageUrl(project.images[0].url)}" loading="lazy" alt="${project.name}" class="w-full h-full rounded-md object-cover" />
+                <img src="${getProjectImageUrl(project.images[0].url)}" loading="lazy" alt="${project.name}" class="w-full h-full rounded-md object-cover" />
             </div>` :
                 `<div class="w-full p-4 aspect-square flex items-center justify-center text-gray-400 mb-2">No Image</div>`;
 
@@ -657,8 +660,8 @@
                 extraImgs = `<div class="grid grid-cols-3 gap-2 mb-4">` +
                     project.images.slice(1, 4).map(img =>
                         `<div class="aspect-square overflow-hidden rounded">
-                <img src="${getProjectImageUrl(img.url)}" loading="lazy" class="w-full h-full rounded-md object-cover" alt="Project Image">
-                </div>`
+                        <img src="${getProjectImageUrl(img.url)}" loading="lazy" class="w-full h-full rounded-md object-cover" alt="Project Image">
+                    </div>`
                     ).join('') + `</div>`;
             }
 
@@ -666,21 +669,21 @@
             let list = '';
             if (Array.isArray(project.features)) {
                 list = `<ul class="list-disc list-inside text-gray-600 mb-3 space-y-1">
-            ${project.features.map(f => `<li>${f}</li>`).join('')}
+                ${project.features.map(f => `<li>${f}</li>`).join('')}
             </ul>`;
             }
 
             document.getElementById('project-modal-content').innerHTML = `
             ${mainImg}
             <div class="px-5 pb-5">
-            <h2 class="text-xl md:text-2xl font-bold mb-2">${project.name}</h2>
-            <div class="flex items-center gap-2 flex-wrap mb-3">
-                <span class="px-2 py-1 bg-primary text-white rounded-full text-xs">${project.category || ''}</span>
-                <span class="px-2 py-1 bg-secondary text-white rounded-full text-xs">${project.year || ''}</span>
-            </div>
-            <p class="text-gray-600 mb-3">${project.description || ''}</p>
-            ${list}
-            ${extraImgs}
+                <h2 class="text-xl md:text-2xl font-bold mb-2">${project.name}</h2>
+                <div class="flex items-center gap-2 flex-wrap mb-3">
+                    <span class="px-2 py-1 bg-primary text-white rounded-full text-xs">${project.category || ''}</span>
+                    <span class="px-2 py-1 bg-secondary text-white rounded-full text-xs">${project.year || ''}</span>
+                </div>
+                <p class="text-gray-600 mb-3">${project.description || ''}</p>
+                ${list}
+                ${extraImgs}
             </div>
         `;
             document.getElementById('project-modal').classList.remove('hidden');
@@ -701,9 +704,9 @@
             if (e.target === this) closeProjectModal();
         });
 
-        // Fetch & render saat ready
+        // Fetch & render saat ready (pakai base url dari ENV)
         document.addEventListener('DOMContentLoaded', function() {
-            fetch('/Constructo-Landing/data.php?action=projects')
+            fetch(window.API_BASE_URL + '/data.php?action=projects')
                 .then(res => res.json())
                 .then(res => {
                     if (Array.isArray(res.projects)) {
@@ -712,6 +715,7 @@
                 });
         });
     </script>
+
 </body>
 
 </html>

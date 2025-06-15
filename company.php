@@ -199,18 +199,17 @@
   </div>
   <script src="./assets/js/script.js"></script>
   <script>
-    
- function getModalView(filePath) {
-  if (!filePath || filePath.trim() === '' || filePath === '-') {
-    return '<span class="text-gray-400 italic">Tidak ada file</span>';
-  }
-  // Cek apakah sudah ada 'admin/' di depan, kalau belum tambahkan
-  let url = filePath.trim();
-  if (!url.startsWith('admin/')) {
-    url = 'admin/' + url.replace(/^\.?\/?/, ''); // hapus ./ atau / di depan, lalu tambah admin/
-  }
-  return `<button onclick="openModal('${url.replace(/'/g,"\\'")}')" class="text-blue-600 hover:underline">Lihat</button>`;
-}
+    function getModalView(filePath) {
+      if (!filePath || filePath.trim() === '' || filePath === '-') {
+        return '<span class="text-gray-400 italic">Tidak ada file</span>';
+      }
+      // Cek apakah sudah ada 'admin/' di depan, kalau belum tambahkan
+      let url = filePath.trim();
+      if (!url.startsWith('admin/')) {
+        url = 'admin/' + url.replace(/^\.?\/?/, ''); // hapus ./ atau / di depan, lalu tambah admin/
+      }
+      return `<button onclick="openModal('${url.replace(/'/g,"\\'")}')" class="text-blue-600 hover:underline">Lihat</button>`;
+    }
 
 
 

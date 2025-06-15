@@ -288,36 +288,35 @@
         d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
     </svg>
   </button>
+  <?php include 'config.php'; ?>
+
   <!-- Custom JavaScript -->
   <script src="./assets/js/script.js"></script>
   <!-- Load Data from BE -->
   <script>
-    // Ganti baseUrl sesuai folder project-mu di XAMPP/Laragon/dll
-    const projectPath = '/Constructo-Landing/admin/uploads/img/';
+    // Pakai base url dari window.API_BASE_URL yang otomatis dari ENV/config.php
+    const PROJECT_IMAGE_BASE = window.API_BASE_URL + "/admin/uploads/img/";
 
     function serviceImageView(imageUrl) {
       if (!imageUrl || imageUrl.trim() === '' || imageUrl === '-') {
         return `<div class="w-full h-60 bg-gray-100 rounded-lg flex items-center justify-center">
-              <span class="text-gray-400">No Image</span>
-            </div>`;
+        <span class="text-gray-400">No Image</span>
+      </div>`;
       }
       let url = imageUrl.trim();
-      // Sudah absolute
+      // Sudah absolute (http/https)
       if (/^https?:\/\//.test(url)) {
         return `<img src="${url}" loading="lazy" alt="Service Image" class="rounded-lg w-full h-60 object-cover" />`;
       }
-      // Pastikan path benar
-      if (!url.startsWith('/Constructo-Landing/')) {
-        url = '/Constructo-Landing/admin/uploads/img/' + url.split('/').pop();
+      // Relatif path, pastikan jadi absolute
+      if (!url.startsWith('/admin/uploads/img/')) {
+        url = '/admin/uploads/img/' + url.split('/').pop();
       }
-      const fullUrl = window.location.origin + url;
+      const fullUrl = PROJECT_IMAGE_BASE + url.replace('/admin/uploads/img/', '');
       return `<img src="${fullUrl}" loading="lazy" alt="Service Image" class="rounded-lg w-full h-60 object-cover" />`;
     }
 
-
-
-
-    // Fetch services dari backend
+    // Fetch services dari backend (otomatis dari lokasi saat ini, tidak hardcode domain)
     fetch('data_api.php?type=services')
       .then(res => res.json())
       .then(data => {
@@ -327,25 +326,27 @@
           return;
         }
         grid.innerHTML = data.map(service => `
-      <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-accent">
-        <div class="p-6">
-          <div class="flex items-center mb-4">
-            <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-              </svg>
+        <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-accent">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-accent">${service.name}</h3>
             </div>
-            <h3 class="text-xl font-bold text-accent">${service.name}</h3>
+            <div class="mb-4">
+              ${serviceImageView(service.image_url)}
+            </div>
+            <h4 class="font-bold text-accent mb-2">${service.name}</h4>
+            <p class="text-gray-600 text-sm mb-2">${service.description}</p>
           </div>
-          <div class="mb-4">
-            ${serviceImageView(service.image_url)}
-          </div>
-          <h4 class="font-bold text-accent mb-2">${service.name}</h4>
-          <p class="text-gray-600 text-sm mb-2">${service.description}</p>
         </div>
-      </div>
-    `).join('');
+      `).join('');
       });
+  </script>
+
   </script>
 
 </body>
