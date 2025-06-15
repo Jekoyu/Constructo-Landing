@@ -459,7 +459,7 @@
                                     <div>
                                         <h4 class="font-bold text-gray-800 mb-2">Office</h4>
                                         <p class="text-gray-600">
-                                            euweung Sawo RT/RW. 002/009,
+                                            Leuweung Sawo RT/RW. 002/009,
                                             Kelurahan Kotabumi, Kecamatan Purwakarta,
                                             Kota Cilegon, Provinsi Banten 42434.
                                         </p>
