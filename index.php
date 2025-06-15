@@ -602,13 +602,28 @@
 
     <!-- Fetch API for projects -->
     <script>
-        // Pastikan base url dari ENV/config.php (otomatis ikut prod/dev)
         const PROJECT_IMAGE_BASE = window.API_BASE_URL + "/admin/uploads/img/";
+
+        // --- Fungsi prioritas & sort ---
+        function prioritizeAndSortProjects(projects) {
+            // 1. Filter yang ada gambar (dan gambar utama valid)
+            let withImages = projects.filter(p =>
+                p.images && p.images.length && p.images[0].url && p.images[0].url.trim() !== ""
+            );
+            // 2. Urutkan dari terbaru ke lama, prioritas berdasarkan year (kalau ada)
+            withImages.sort((a, b) => {
+                // Year descending, fallback ke id lebih besar = lebih baru
+                const yearA = parseInt(a.year) || 0;
+                const yearB = parseInt(b.year) || 0;
+                if (yearA !== yearB) return yearB - yearA;
+                return (b.id || 0) - (a.id || 0);
+            });
+            return withImages;
+        }
 
         function getProjectImage(project) {
             if (project.images && project.images.length && project.images[0].url) {
                 let img = project.images[0].url.trim();
-                // Perbaiki path jika belum full
                 if (!img.startsWith(PROJECT_IMAGE_BASE)) {
                     img = img.replace(/^uploads\/img\//, '').replace(/^\/+/, '');
                     img = PROJECT_IMAGE_BASE + img;
@@ -633,8 +648,8 @@
                 grid.innerHTML = `<div class="col-span-4 text-center text-gray-400">No projects found.</div>`;
                 return;
             }
-            // hanya ambil 4 project terbaru
-            grid.innerHTML = projects.slice(0, 4).map((project, idx) => `
+            // Tampilkan hanya 4 project bergambar dan terbaru
+            grid.innerHTML = projects.slice(0, 4).map(project => `
             <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
                 onclick='openProjectModal(${JSON.stringify(project)})'>
                 <div class="relative overflow-hidden aspect-square">
@@ -716,11 +731,13 @@
                 .then(res => res.json())
                 .then(res => {
                     if (Array.isArray(res.projects)) {
-                        renderProjects(res.projects);
+                        const displayProjects = prioritizeAndSortProjects(res.projects);
+                        renderProjects(displayProjects);
                     }
                 });
         });
     </script>
+
 
 </body>
 
