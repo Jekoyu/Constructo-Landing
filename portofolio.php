@@ -371,8 +371,15 @@
       return [...withImages, ...withoutImages];
     }
 
+    function getProjectsWithImages(projects) {
+      return projects.filter(
+        p => p.images && p.images.length && p.images[0].url && p.images[0].url.trim() !== ""
+      );
+    }
+
     function renderProjectsPaginated(projects, page = 1) {
-      projects = prioritizeWithImages(projects);
+      // **Filter hanya project yang ada gambarnya**
+      projects = getProjectsWithImages(projects);
 
       const grid = document.getElementById('portfolio-grid');
       const total = projects.length;
@@ -388,21 +395,21 @@
       }
 
       grid.innerHTML = currentProjects.map(project => `
-    <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
-      onclick='openProjectModal(${JSON.stringify(project)})'>
-      <div class="relative overflow-hidden aspect-square">
-        ${getProjectImage(project)}
-      </div>
-      <div class="p-5">
-        <h3 class="text-lg font-bold mb-1 text-gray-800">${project.name}</h3>
-        <p class="text-gray-600 mb-2 truncate">${project.description || ''}</p>
-        <div class="flex flex-col-reverse items-start gap-4 ">
-          <span class="text-xs text-gray-500">${project.year || ''}</span>
-          <span class="px-2 py-1 bg-primary text-white rounded-full text-xs">${project.category || ''}</span>
+        <div class="portfolio-item group relative overflow-hidden rounded-lg shadow-lg bg-white cursor-pointer"
+          onclick='openProjectModal(${JSON.stringify(project)})'>
+          <div class="relative overflow-hidden aspect-square">
+            ${getProjectImage(project)}
+          </div>
+          <div class="p-5">
+            <h3 class="text-lg font-bold mb-1 text-gray-800">${project.name}</h3>
+            <p class="text-gray-600 mb-2 truncate">${project.description || ''}</p>
+            <div class="flex flex-col-reverse items-start gap-4 ">
+              <span class="text-xs text-gray-500">${project.year || ''}</span>
+              <span class="px-2 py-1 bg-primary text-white rounded-full text-xs">${project.category || ''}</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  `).join('');
+      `).join('');
 
       // Render Pagination Controls
       renderPaginationControls(page, Math.ceil(total / pageSize));
