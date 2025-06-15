@@ -1,10 +1,6 @@
 <?php
 // Auto base url for API, image, etc
-if ($_SERVER['HTTP_HOST'] === 'localhost') {
-  $apiBaseUrl = "http://localhost/Constructo-Landing";
-} else {
-  $apiBaseUrl = "https://ancatamacitraabadi.co.id";
-}
+$apiBaseUrl = getenv('APP_URL');
 ?>
 <script>
 window.API_BASE_URL = "<?= $apiBaseUrl ?>";

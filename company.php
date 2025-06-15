@@ -182,6 +182,7 @@
   </section>
 
   <?php include 'footer.php'; ?>
+  <?php include 'config.php'; ?>
 
   <!-- Back to Top Button -->
   <button id="back-to-top" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-secondary hover:bg-orange-600 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-lg flex items-center justify-center transition-all opacity-0 invisible z-50 transform hover:scale-110">
