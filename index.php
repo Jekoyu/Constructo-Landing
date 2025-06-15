@@ -396,7 +396,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <!-- Portfolio Section -->
     <section class="py-20 bg-gray-50 bg-pattern-light">
         <div class="container mx-auto px-4 md:px-6 lg:px-8">
@@ -409,7 +408,14 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" id="portfolio-grid"></div>
         </div>
-
+        <div class="flex justify-center mt-12">
+            <a href="./portofolio.php" class="px-8 py-4 bg-secondary text-white font-bold rounded-lg hover:bg-orange-600 transition-colors shadow-lg flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                </svg>
+                View All Projects
+            </a>
+        </div>
         <!-- Modal -->
         <div id="project-modal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-60 flex justify-center items-center">
             <div class="bg-white rounded-lg shadow-2xl w-full max-w-lg md:max-w-xl mx-auto relative">
