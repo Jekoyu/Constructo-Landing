@@ -112,7 +112,21 @@
       </div>
     </div>
   </section>
+  <!-- Struktur Organisai -->
 
+  <section class="py-12 sm:py-16 bg-white" id="struktur-organisasi">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div data-aos="fade-left">
+        <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-primary mb-4 sm:mb-6">Struktur Organisasi</h2>
+        <p class="text-gray-700 text-sm sm:text-base lg:text-lg text-justify leading-relaxed mb-6 sm:mb-8">
+          Struktur organisasi PT. Ancatama Citra Abadi dirancang untuk mendukung efisiensi operasional dan komunikasi yang efektif antar departemen. Setiap anggota tim memiliki peran dan tanggung jawab yang jelas untuk memastikan kelancaran setiap proyek.
+        </p>
+        <div class="bg-white flex items-center justify-center">
+          <img class="w-full md:w-4/5 lg:w-3/4 xl:w-2/3 h-auto rounded-lg shadow-md" src="./assets/images/struktur-organisasi.jpg" alt="Struktur Organisasi">
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Visi & Misi Section -->
   <section class="py-12 sm:py-16 bg-gray-50" id="visi-misi">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -180,21 +194,7 @@
       </div>
     </div>
   </section>
-  <!-- Struktur Organisai -->
 
-  <section class="py-12 sm:py-16 bg-white" id="struktur-organisasi">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div data-aos="fade-left">
-        <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-primary mb-4 sm:mb-6">Struktur Organisasi</h2>
-        <p class="text-gray-700 text-sm sm:text-base lg:text-lg text-justify leading-relaxed mb-6 sm:mb-8">
-          Struktur organisasi PT. Ancatama Citra Abadi dirancang untuk mendukung efisiensi operasional dan komunikasi yang efektif antar departemen. Setiap anggota tim memiliki peran dan tanggung jawab yang jelas untuk memastikan kelancaran setiap proyek.
-        </p>
-        <div class="bg-white flex items-center justify-center">
-          <img class="w-full md:w-4/5 lg:w-3/4 xl:w-2/3 h-auto rounded-lg shadow-md" src="./assets/images/struktur-organisasi.jpg" alt="Struktur Organisasi">
-        </div>
-      </div>
-    </div>
-  </section>
 
 
   <?php include 'footer.php'; ?>
