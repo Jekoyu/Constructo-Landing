@@ -79,7 +79,7 @@
                     <div
                         class="absolute inset-0 bg-cover bg-center"
                         style="
-                background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+                background-image: url('./assets/images/slider-2.jpg');
               "></div>
                     <div class="hero-overlay absolute inset-0"></div>
                     <div
@@ -121,7 +121,7 @@
                     <div
                         class="absolute inset-0 bg-cover bg-center"
                         style="
-                background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+                background-image: url('./assets/images/slider-6.jpg');
               "></div>
                     <div class="hero-overlay absolute inset-0"></div>
                     <div
@@ -156,7 +156,7 @@
                     <div
                         class="absolute inset-0 bg-cover bg-center"
                         style="
-                background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+                background-image: url('./assets/images/slider-3.jpg');
               "></div>
                     <div class="hero-overlay absolute inset-0"></div>
                     <div
